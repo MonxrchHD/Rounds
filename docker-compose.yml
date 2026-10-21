@@ -1,0 +1,13 @@
+services: 
+  rounds-db:
+    image: pgvector/pgvector:0.8.2-pg18-trixie
+    ports:
+      - "5432:5432"
+    environment: 
+      POSTGRES_PASSWORD: ${ROUNDS_DB_PASSWORD}
+      POSTGRES_USER: ${ROUNDS_DB_USERNAME}
+      POSTGRES_DB: ${ROUNDS_DB_NAME}
+    volumes:
+      - "rounds-data:/var/lib/postgresql"
+volumes:
+  rounds-data:
