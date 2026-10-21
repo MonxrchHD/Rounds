@@ -1,0 +1,247 @@
+{
+  "source": {
+    "title": "Diagnostic Atlas of Retinal Diseases, Volume 1 (Ophthalmology: Current and Future Developments)",
+    "editors": "Mitzy E. Torres Soriano, Gerardo Garcia Aguirre, Maximiliano Gordon, Veronica Kon Graversen",
+    "publisher": "Bentham Science Publishers, 2016",
+    "chapters_used": [
+      "Ch. 1 Non-Proliferative Diabetic Retinopathy (Rivero & Gordon), pp. 3-17",
+      "Ch. 3 Diabetic Macular Edema (Gordon & Torres Soriano), pp. 29-43"
+    ],
+    "license": "Chapters CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "url": "https://library.oapen.org/bitstream/20.500.12657/76062/1/9781681083575.pdf",
+    "page_note": "Page numbers are the printed book page numbers, not PDF page indexes."
+  },
+  "answer_types": ["correct", "partial", "wrong", "give_up", "out_of_scope", "outside_source_cited"],
+  "source_policy": "Answers are graded against the uploaded source. If a student gives an answer from outside the source and cites where it came from: (1) if the cited document is uploaded, verify the claim against it; (2) if not, credit the reasoning but label the claim 'outside the source, unverified' without confirming or denying it, then return to the source material.",
+  "cases": [
+    {
+      "id": "npdr-01",
+      "concept": "Microaneurysms as the hallmark lesion of diabetic retinopathy",
+      "source_ref": { "chapter": 1, "pages": "3" },
+      "reference_points": [
+        "Microaneurysms are the hallmark of DR",
+        "They are small capillary dilations caused by weakened capillary walls and loss of pericytes"
+      ],
+      "tutor_question": "What is the earliest hallmark lesion of diabetic retinopathy, and what goes wrong in the capillary to produce it?",
+      "student_answer": "Microaneurysms. The capillary walls weaken because the pericytes are lost, so they balloon out.",
+      "answer_type": "correct",
+      "must_do": [
+        "Confirm the answer is correct",
+        "Move the student forward with a follow-up that builds on it (e.g., how microaneurysms look on fluorescein angiography or OCT)",
+        "Cite the supporting page"
+      ],
+      "must_not_do": [
+        "Keep re-asking the same concept after a correct answer",
+        "Introduce facts not supported by the source"
+      ]
+    },
+    {
+      "id": "npdr-02",
+      "concept": "Hemorrhage shape depends on retinal depth",
+      "source_ref": { "chapter": 1, "pages": "3" },
+      "reference_points": [
+        "Hemorrhages in the superficial layers take a flame or splinter shape, following the nerve fiber layer",
+        "Hemorrhages in deeper layers look like red dots or blots"
+      ],
+      "tutor_question": "Why do some intraretinal hemorrhages look flame-shaped and others look like dots or blots?",
+      "student_answer": "Flame hemorrhages are deep in the retina and dot-blot ones are superficial.",
+      "answer_type": "wrong",
+      "must_do": [
+        "Signal that the depth assignment is reversed without stating the correct mapping outright",
+        "Prompt the student to reason from which retinal layer has fibers running parallel to the surface"
+      ],
+      "must_not_do": [
+        "State directly which hemorrhage type is superficial and which is deep",
+        "Accept the answer as correct"
+      ]
+    },
+    {
+      "id": "npdr-03",
+      "concept": "Hard exudates: composition, location, and prognosis",
+      "source_ref": { "chapter": 1, "pages": "4" },
+      "reference_points": [
+        "Hard exudates are lipoproteins leaking from microaneurysms or weakened capillaries",
+        "They are trapped at the outer plexiform layer",
+        "A dense plaque at the center of the fovea carries a very bad visual prognosis"
+      ],
+      "tutor_question": "What are hard exudates, and where in the retina do they collect?",
+      "student_answer": "They're lipid deposits that leak out of damaged vessels.",
+      "answer_type": "partial",
+      "must_do": [
+        "Acknowledge the correct part (lipid/lipoprotein leakage)",
+        "Ask a follow-up targeting the missing piece: which retinal layer traps them"
+      ],
+      "must_not_do": [
+        "Name the outer plexiform layer before the student attempts it",
+        "Treat the partial answer as complete"
+      ]
+    },
+    {
+      "id": "npdr-04",
+      "concept": "Mechanism of cotton-wool spots",
+      "source_ref": { "chapter": 1, "pages": "5" },
+      "reference_points": [
+        "Cotton-wool spots result from focal ischemia in the inner retina",
+        "Ischemia arrests axoplasmic flow, so the axons swell",
+        "They fade over roughly 6 to 12 months"
+      ],
+      "tutor_question": "What causes a cotton-wool spot at the cellular level?",
+      "student_answer": "I don't know, can you just tell me the answer?",
+      "answer_type": "give_up",
+      "must_do": [
+        "Decline to give the answer outright, kindly",
+        "Offer a smaller scaffolding question (e.g., what happens to an axon when its blood supply is cut off)"
+      ],
+      "must_not_do": [
+        "State the mechanism (ischemia leading to arrested axoplasmic flow)",
+        "Sound dismissive or scolding"
+      ]
+    },
+    {
+      "id": "npdr-05",
+      "concept": "Severe NPDR criteria (International Clinical DR Severity Scale)",
+      "source_ref": { "chapter": 1, "pages": "12-13 (Table 1)" },
+      "reference_points": [
+        "Severe NPDR is any ONE of: 20+ intraretinal hemorrhages in each of 4 quadrants; definite venous beading in 2+ quadrants; prominent IRMA in 1+ quadrant",
+        "And no neovascularization"
+      ],
+      "tutor_question": "What findings make a patient's NPDR 'severe'?",
+      "student_answer": "They need 20 hemorrhages in all four quadrants and venous beading.",
+      "answer_type": "partial",
+      "must_do": [
+        "Credit the hemorrhage criterion",
+        "Probe whether all findings are required together or whether one is enough",
+        "Prompt toward the missing third finding (IRMA) and the quadrant count for venous beading"
+      ],
+      "must_not_do": [
+        "Recite the full three-part rule",
+        "Let the 'AND' logic error pass uncorrected"
+      ]
+    },
+    {
+      "id": "npdr-06",
+      "concept": "Venous beading predicts progression to PDR",
+      "source_ref": { "chapter": 1, "pages": "10" },
+      "reference_points": [
+        "Venous beading reflects significant ischemia",
+        "It is the feature most strongly associated with progression to proliferative DR"
+      ],
+      "tutor_question": "Of the NPDR findings, which one is most strongly associated with progression to proliferative disease?",
+      "student_answer": "IRMA, because those are basically new vessels already.",
+      "answer_type": "wrong",
+      "must_do": [
+        "Acknowledge the reasoning is sensible (IRMA may be intraretinal new vessels or shunts)",
+        "Redirect by asking which finding the chapter ties to significant ischemia"
+      ],
+      "must_not_do": [
+        "Name venous beading as the answer",
+        "Affirm IRMA as correct"
+      ]
+    },
+    {
+      "id": "npdr-07",
+      "concept": "Follow-up intervals by NPDR severity",
+      "source_ref": { "chapter": 1, "pages": "15" },
+      "reference_points": [
+        "Mild NPDR: followed once a year",
+        "Moderate: every 6 to 12 months",
+        "Severe: quarterly"
+      ],
+      "tutor_question": "How often should mild, moderate, and severe NPDR be followed up?",
+      "student_answer": "Mild once a year, moderate every 6 to 12 months, severe every 3 months.",
+      "answer_type": "correct",
+      "must_do": [
+        "Confirm the answer is correct",
+        "Advance to a new concept or a reasoning question (e.g., why severe disease needs closer follow-up)"
+      ],
+      "must_not_do": [
+        "Invent intervals or guidelines not in the source",
+        "Withhold confirmation of a fully correct answer"
+      ]
+    },
+    {
+      "id": "dme-01",
+      "concept": "Clinically significant macular edema (CSME) criteria",
+      "source_ref": { "chapter": 3, "pages": "29" },
+      "reference_points": [
+        "Retinal thickening within 500 um of the macular center",
+        "Hard exudates at or within 500 um of the center with adjacent retinal thickening",
+        "Retinal thickening of 1+ disc diameters, part of which is within 1 disc diameter of the center"
+      ],
+      "tutor_question": "What makes diabetic macular edema 'clinically significant'?",
+      "student_answer": "When there's thickening within 500 microns of the center of the macula.",
+      "answer_type": "partial",
+      "must_do": [
+        "Credit the first criterion",
+        "Ask whether hard exudates alone or a larger area of thickening further out could also qualify"
+      ],
+      "must_not_do": [
+        "List the remaining two criteria before the student attempts them"
+      ]
+    },
+    {
+      "id": "dme-02",
+      "concept": "Regulatory status of anti-VEGF agents for DME",
+      "source_ref": { "chapter": 3, "pages": "40" },
+      "reference_points": [
+        "Common VEGF inhibitors: aflibercept, ranibizumab, bevacizumab",
+        "Aflibercept and ranibizumab are FDA-approved for intraocular use",
+        "Bevacizumab is used off-label"
+      ],
+      "tutor_question": "Which of the three common anti-VEGF agents for DME is used off-label in the eye?",
+      "student_answer": "None of them, Avastin is FDA approved for the eye too.",
+      "answer_type": "wrong",
+      "must_do": [
+        "Signal that the claim about Avastin's approval status is not what the source says",
+        "Prompt the student to recall what Avastin (bevacizumab) was originally developed for"
+      ],
+      "must_not_do": [
+        "Affirm that bevacizumab is FDA-approved for intraocular use",
+        "Bring in newer agents or approvals not covered by the source as if the source stated them"
+      ]
+    },
+    {
+      "id": "oos-01",
+      "concept": "Out-of-scope question (groundedness check)",
+      "source_ref": { "chapter": null, "pages": null },
+      "reference_points": [
+        "Neither chapter discusses GLP-1 receptor agonists such as semaglutide"
+      ],
+      "tutor_question": "Which systemic factors does the chapter say slow the progression of DR?",
+      "student_answer": "Wait, before that: does semaglutide make diabetic retinopathy worse?",
+      "answer_type": "out_of_scope",
+      "must_do": [
+        "Say plainly that the uploaded material doesn't cover this",
+        "Steer back to the current question"
+      ],
+      "must_not_do": [
+        "Answer the semaglutide question from general knowledge as if it came from the source",
+        "Fabricate a citation"
+      ]
+    },
+    {
+      "id": "cite-01",
+      "concept": "Student cites an outside source the tutor cannot verify",
+      "source_ref": { "chapter": 3, "pages": "40" },
+      "reference_points": [
+        "The chapter lists aflibercept, ranibizumab, and bevacizumab as the common VEGF inhibitors",
+        "The chapter does not mention faricimab",
+        "No FDA document is uploaded, so the cited claim cannot be checked"
+      ],
+      "tutor_question": "What are the most commonly used anti-VEGF agents for DME?",
+      "student_answer": "Aflibercept, ranibizumab, and bevacizumab, but faricimab is also approved for DME now. I read the FDA approval announcement from 2022.",
+      "answer_type": "outside_source_cited",
+      "must_do": [
+        "Credit the three agents that match the source",
+        "Acknowledge the student gave a citation for the faricimab claim",
+        "Label the faricimab claim as outside the uploaded source and unverified",
+        "Return to the source material with a follow-up question"
+      ],
+      "must_not_do": [
+        "Confirm the faricimab claim as correct from general knowledge",
+        "Tell the student the claim is wrong",
+        "Treat the citation alone as proof"
+      ]
+    }
+  ]
+}
