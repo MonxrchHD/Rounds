@@ -18,8 +18,11 @@ def edge_lines(page_texts):
 
 
 def find_repeated_lines(lines, min_repeats=HEADER_MIN_REPEATS):
-    normalized = [re.sub(r"\d", "", line).strip() for line in lines]
+    normalized = normalize_line(line) for line in lines
 
     counts = Counter(normalized)
     repeated = {line for line, count in counts.items() if count >= min_repeats}
     return repeated
+
+def normalize_line(line):
+    return re.sub(r"\d", "", line).strip()
