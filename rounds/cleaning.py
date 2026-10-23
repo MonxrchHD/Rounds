@@ -59,3 +59,12 @@ def rejoin_hyphenated_words(text, vocab):
         else: 
             return first + "-" + second
     return re.sub(r"([A-Za-z]+)-\n([A-Za-z]+)", replace_hyphenated, text)
+
+def clean_pages(page_texts):
+    headers, footers = edge_lines(page_texts)
+    repeated = find_repeated_lines(headers + footers)
+    cleaned = remove_repeated_lines(page_texts, repeated)
+    collapsed = [collapse_spaces(text) for text in cleaned]
+    vocab = build_vocabulary(collapsed)
+    rejoined = [rejoin_hyphenated_words(text, vocab) for text in collapsed]
+    return rejoined
