@@ -1,4 +1,7 @@
-HEADER_MIN_REPEATS = 5
+import re
+from collections import Counter
+
+HEADER_MIN_REPEATS = 3
 
 
 def edge_lines(page_texts):
@@ -12,3 +15,11 @@ def edge_lines(page_texts):
         headers.append(stripped[0])
         footers.append(stripped[-1])
     return headers, footers
+
+
+def find_repeated_lines(lines, min_repeats=HEADER_MIN_REPEATS):
+    normalized = [re.sub(r"\d", "", line).strip() for line in lines]
+
+    counts = Counter(normalized)
+    repeated = {line for line, count in counts.items() if count >= min_repeats}
+    return repeated

@@ -1,5 +1,5 @@
 from pypdf import PdfReader
-from rounds.cleaning import edge_lines
+from rounds.cleaning import edge_lines, find_repeated_lines
 
 reader = PdfReader("data/atlas_vol1.pdf")
 print("Total pages:", len(reader.pages))
@@ -12,5 +12,8 @@ for index, page in enumerate(reader.pages[first:first + 5], start=first + 1):
 
 page_texts = [page.extract_text() for page in reader.pages]
 headers, footers = edge_lines(page_texts)
-print(len(headers))
-print(headers[14:20])
+repeated = find_repeated_lines(headers + footers)
+print(len(repeated))
+for line in sorted(repeated):
+    print(line)
+
