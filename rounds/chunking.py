@@ -2,6 +2,8 @@ import re
 
 
 MIN_LOWERCASE_RATIO = 0.2
+CHUNK_WORDS = 150
+OVERLAP_WORDS = 20
 
 def split_sentences(text):
     text = text.replace("\n", " ")
@@ -49,3 +51,48 @@ def is_quality_sentence(sentence):
 def filter_page_range(sentences, first_page, last_page):
     in_range = [s for s in sentences if first_page <= s[1] and s[2] <= last_page]
     return in_range
+
+def make_chunk(sentences_in_chunk):
+                chunk_text = " ".join(s[0] for s in sentences_in_chunk)
+                chunk_start = sentences_in_chunk[0][1]
+                chunk_end = sentences_in_chunk[-1][2]
+                return (chunk_text, chunk_start, chunk_end)
+
+def build_chunks(sentences):
+    chunks = []
+    current_chunk = []
+    current_words = 0
+    new_count = 0
+
+    for text, start, end in sentences:
+        words = text.split()
+        if len(words) > CHUNK_WORDS:
+            if new_count > 0:
+                chunks.append(make_chunk(current_chunk))
+            current_chunk = []
+            current_words = 0
+            new_count = 0
+            for i in range(0, len(words), CHUNK_WORDS):
+                chunk_text = " ".join(words[i:i + CHUNK_WORDS])
+                chunks.append((chunk_text, start, end))
+            continue
+        if current_words + len(words) > CHUNK_WORDS:
+            if new_count > 0:
+                chunks.append(make_chunk(current_chunk))
+            overlap = []
+            overlap_words = 0
+            for sentence in reversed(current_chunk):
+                n = len(sentence[0].split())
+                if overlap_words + n > OVERLAP_WORDS or overlap_words + len(words) + n > CHUNK_WORDS:
+                    break
+                overlap.insert(0, sentence)
+                overlap_words += n
+            current_chunk = overlap 
+            current_words = overlap_words 
+            new_count = 0
+        current_chunk.append((text, start, end))
+        current_words += len(words)
+        new_count += 1
+    if new_count > 0:
+        chunks.append(make_chunk(current_chunk))
+    return chunks
