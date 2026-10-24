@@ -1,9 +1,10 @@
 import re
+from sentence_transformers import SentenceTransformer
 
-
+model = SentenceTransformer("all-MiniLM-L6-v2")
 MIN_LOWERCASE_RATIO = 0.2
-CHUNK_WORDS = 150
-OVERLAP_WORDS = 20
+CHUNK_TOKENS = 245
+OVERLAP_TOKENS = 40
 
 def split_sentences(text):
     text = text.replace("\n", " ")
@@ -63,40 +64,60 @@ def make_chunk(sentences_in_chunk):
                 chunk_end = sentences_in_chunk[-1][2]
                 return (chunk_text, chunk_start, chunk_end)
 
-def build_chunks(sentences):
+def count_tokens(text):
+    tokens = model.tokenizer.tokenize(text)
+    return len(tokens)
+
+def split_long_sentence(text, count_tokens):
+    words = text.split()
+    chunk = []
+    chunks = []
+    token_count = 0
+    for word in words:
+        tokens = count_tokens(word)
+        if chunk and token_count + tokens > CHUNK_TOKENS:
+            chunks.append(" ".join(chunk))
+            chunk = []
+            token_count = 0
+        chunk.append(word)
+        token_count += tokens
+    if chunk:
+        chunks.append(" ".join(chunk))
+    return chunks
+        
+def build_chunks(sentences, count_tokens):
     chunks = []
     current_chunk = []
-    current_words = 0
+    current_tokens = 0
     new_count = 0
 
     for text, start, end in sentences:
-        words = text.split()
-        if len(words) > CHUNK_WORDS:
+        pieces = count_tokens(text)
+        if pieces > CHUNK_TOKENS:
             if new_count > 0:
                 chunks.append(make_chunk(current_chunk))
             current_chunk = []
-            current_words = 0
+            current_tokens = 0
             new_count = 0
-            for i in range(0, len(words), CHUNK_WORDS):
-                chunk_text = " ".join(words[i:i + CHUNK_WORDS])
-                chunks.append((chunk_text, start, end))
+            for piece_text in split_long_sentence(text, count_tokens):
+                chunks.append((piece_text, start, end))
             continue
-        if current_words + len(words) > CHUNK_WORDS:
+        if current_tokens + pieces > CHUNK_TOKENS:
             if new_count > 0:
                 chunks.append(make_chunk(current_chunk))
             overlap = []
-            overlap_words = 0
+            overlap_tokens = 0
             for sentence in reversed(current_chunk):
-                n = len(sentence[0].split())
-                if overlap_words + n > OVERLAP_WORDS or overlap_words + len(words) + n > CHUNK_WORDS:
+                n = count_tokens(sentence[0])
+                if overlap_tokens + n > OVERLAP_TOKENS or overlap_tokens + pieces + n > CHUNK_TOKENS:
                     break
                 overlap.insert(0, sentence)
-                overlap_words += n
+                overlap_tokens += n
             current_chunk = overlap 
-            current_words = overlap_words 
+            current_tokens = overlap_tokens 
             new_count = 0
         current_chunk.append((text, start, end))
-        current_words += len(words)
+        current_tokens += pieces
         new_count += 1
     if new_count > 0:
         chunks.append(make_chunk(current_chunk))
