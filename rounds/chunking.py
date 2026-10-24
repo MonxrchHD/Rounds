@@ -48,6 +48,11 @@ def is_quality_sentence(sentence):
     lowercase_ratio= lower_case/ non_space if non_space > 0 else 0
     return  lowercase_ratio >= MIN_LOWERCASE_RATIO 
 
+def is_reference_sentence(text):
+    names = r"[A-Z][a-z]+ [A-Z]{1,3},"
+    tags = r"doi:|https?://|www\.|arxiv:|PMID:|PMC\d+"
+    return len(re.findall(names, text)) >= 2 or len(re.findall(tags, text)) > 0
+
 def filter_page_range(sentences, first_page, last_page):
     in_range = [s for s in sentences if first_page <= s[1] and s[2] <= last_page]
     return in_range
