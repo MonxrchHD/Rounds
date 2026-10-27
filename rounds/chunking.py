@@ -1,7 +1,6 @@
 import re
-from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+
 MIN_LOWERCASE_RATIO = 0.2
 CHUNK_TOKENS = 245
 OVERLAP_TOKENS = 40
@@ -59,14 +58,12 @@ def filter_page_range(sentences, first_page, last_page):
     return in_range
 
 def make_chunk(sentences_in_chunk):
-                chunk_text = " ".join(s[0] for s in sentences_in_chunk)
-                chunk_start = sentences_in_chunk[0][1]
-                chunk_end = sentences_in_chunk[-1][2]
-                return (chunk_text, chunk_start, chunk_end)
+    chunk_text = " ".join(s[0] for s in sentences_in_chunk)
+    chunk_start = sentences_in_chunk[0][1]
+    chunk_end = sentences_in_chunk[-1][2]
+    return (chunk_text, chunk_start, chunk_end)
 
-def count_tokens(text):
-    tokens = model.tokenizer.tokenize(text)
-    return len(tokens)
+
 
 def split_long_sentence(text, count_tokens):
     words = text.split()

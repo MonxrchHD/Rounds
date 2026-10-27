@@ -3,7 +3,9 @@ from rounds.cleaning import clean_pages
 from rounds.chunking import build_chunks, filter_page_range, is_reference_sentence, split_document, is_quality_sentence, count_tokens, split_long_sentence
 from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+from rounds.embeddings import embed_texts, load_model
+
+model = load_model()
 reader = PdfReader("data/atlas_vol1.pdf")
 page_texts = [page.extract_text() for page in reader.pages]
 
@@ -16,18 +18,8 @@ good = [s for s in sentences if is_quality_sentence(s[0]) and not is_reference_s
 in_range = filter_page_range(good, 15, 290)
 chunks = build_chunks(in_range, count_tokens)
 
-counts = [(len(model.tokenizer.tokenize(text)), start, end) for text, start, end in chunks]
-overflow = sum(1 for count, start, end in counts if count > 254)
-print(max(counts))
-print("Overflow chunks:", overflow)
-worst = max(counts)
-for text, start, end in chunks:
-    if (start, end) == (worst[1], worst[2]):
-        print(text)
-        print(model.tokenizer.tokenize(text)[:60])
-over = [(count, s, e) for count, s, e in counts if count > 254]
-for count, s, e in over[:10]:
-    for text, start, end in chunks:
-        if (start, end) == (s, e):
-            print(count, "|", text[:120])
-            break
+assert max(count_tokens(text) for text, start, end in chunks) <= 254
+
+embeddings = embed_texts([text for text, start, end in chunks], model)
+print(embeddings.shape)
+print(len(chunks))
