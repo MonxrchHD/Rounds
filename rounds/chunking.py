@@ -14,13 +14,21 @@ def split_document(pages):
     results = []
     carry = ""
     carry_start = None
+    carry_end = None
 
 
 
     for page_number, page in enumerate(pages, start = 1):
+        if not page.strip():
+            continue
         if carry:
-            page = carry + " " + page
-            first_page = carry_start
+            if page.strip()[0].islower():
+                page = carry + " " + page
+                first_page = carry_start
+            else: 
+                results.append((carry, carry_start, carry_end))
+                first_page = page_number
+            carry, carry_start, carry_end = "", None, None
         else:
             first_page = page_number
         sentences = split_sentences(page)
@@ -36,10 +44,10 @@ def split_document(pages):
             results.append((last, last_page, page_number))
             carry, carry_start = "", None
         else:
-            carry, carry_start = last, last_page
+            carry, carry_start, carry_end = last, last_page, page_number
 
     if carry:
-        results.append((carry, carry_start, len(pages)))
+        results.append((carry, carry_start, carry_end))
     return results
 
 def is_quality_sentence(sentence):
