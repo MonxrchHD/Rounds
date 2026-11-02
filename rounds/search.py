@@ -36,3 +36,24 @@ def keyword_search(conn, question,  n = 20):
         """,
         (or_query, or_query, n),
     ).fetchall()
+
+def fuse_rankings(result_lists, k = 60):
+    scores ={}
+    rows = {}
+
+    for result_list in result_lists:
+        for rank, entry in enumerate(result_list, start = 1):
+            chunk_id = entry[0]
+            scores[chunk_id] = scores.get(chunk_id,0) + 1/ (k + rank)
+            if chunk_id not in rows:
+                rows[chunk_id] = entry
+
+    order = sorted(scores, key = scores.get, reverse = True)
+    return [rows[r][:-1] + (scores[r],) for r in order]
+
+
+def hybrid_search(conn, model, question, k = 5, pool = 20):
+    embedding_results = search(conn, model, question, k = pool)
+    keyword_results = keyword_search(conn, question, n = pool)
+    fused_results = fuse_rankings([embedding_results, keyword_results])
+    return fused_results[:k]
