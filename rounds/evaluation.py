@@ -4,7 +4,7 @@ def pages_overlap(chunk_start, chunk_end, exp_start, exp_end):
     return chunk_start <= exp_end and chunk_end >= exp_start
 
 def first_hit_rank(results, exp_start, exp_end):
-    for rank, (content, start_page, end_page, title, distance) in enumerate(results, start=1):
+    for rank, (chunk_id, content, start_page, end_page, title, distance) in enumerate(results, start=1):
         if pages_overlap(start_page, end_page, exp_start, exp_end):
             return rank
     return None
