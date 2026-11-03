@@ -3,10 +3,10 @@
 Results from `python -m scripts.eval_retrieval` on the `evals/retina-atlas` golden set.
 
 - **Dataset:** Diagnostic Atlas of Retinal Diseases, Volume 1 (viewer pages 15–290)
-- **Cases scored:** 10 (`oos-01` excluded: no expected pages)
-- **Metrics:** hit rate @ 5 (share of cases with a correct chunk in the top 5) and MRR (mean of 1/rank, 0 for a miss). Higher is better for both.
+- **Cases scored:** 35 (10 golden cases + 25 retrieval-only cases; `oos-01` excluded)- **Metrics:** hit rate @ 5 (share of cases with a correct chunk in the top 5) and MRR (mean of 1/rank, 0 for a miss). Higher is better for both.
 - **Hit rule:** a returned chunk counts as correct if its page range overlaps the case's `expected_viewer_pages`.
 - **Caution:** with 10 cases, one case changes hit rate by 0.10. Treat small differences as directional, not conclusive.
+- **Decision rule:** a change ships only if hit rate @ 5 rises; MRR breaks ties. The tutor reads all top 5 results, so finding a correct chunk matters more than its exact position.
 
 ## Results log
 
@@ -17,6 +17,8 @@ Results from `python -m scripts.eval_retrieval` on the `evals/retina-atlas` gold
 | 2026-11-02 | + Abbreviation expansion in `search_text`, used by both embeddings and keyword search | 0.80 | 0.750 | Regression. Expanding common abbreviations (DR, NPDR, PDR) inserted "diabetic retinopathy" into most chunks, so OR keyword matching stopped distinguishing them. npdr-06 5 → miss; npdr-07 1 → 2. npdr-04 still a miss. |
 | 2026-11-02 | Abbreviation expansion for embeddings only (keyword search back on `content`) | 0.90 | 0.783 | npdr-06 recovered to rank 3. Embeddings now rank the CWS chunk 4th for npdr-04, but fusion pushes it out. npdr-07 stays at 2, likely because measuring expanded text shifts chunk boundaries. |
 | 2026-11-02 | **Shipped:** expansion behind `EXPAND_ABBREVIATIONS = False` | **0.90** | **0.820** | Reproduces the hybrid result exactly, confirming the flag restores prior behavior. |
+| 2026-11-02 | Grew eval set from 10 to 35 cases (25 retrieval-only cases from chapters 1–5); config unchanged (hybrid, expansion off) | 0.86 | 0.714 | New baseline. Lower than 0.90 partly because the original 10 had been used to tune the system. Misses: npdr-04, r-pdr-03, r-pdr-05, r-dme-07, r-brvo-03. All five involve a term the student types in full that the source mostly abbreviates (CWS, PDR, PRP, CSME, BRVO). |
+| 2026-11-02 | Abbreviation expansion on 35 cases (embeddings use expanded text, keyword search on `content`) | 0.86 | 0.677 | Not shipped: same hit rate, lower MRR. Fixed r-pdr-05 (miss → 5) and r-dme-07 (miss → 3), both abbreviation cases. Broke r-dme-05 (1 → miss) and r-brvo-02 (5 → miss), neither an abbreviation case, likely from shifted chunk boundaries. Rule set beforehand: ship only if hit rate rises. |
 
 ## Current configuration (shipped)
 
@@ -26,7 +28,7 @@ Results from `python -m scripts.eval_retrieval` on the `evals/retina-atlas` gold
 | Chunk size / overlap | 245 / 40 tokens, sentence-aligned |
 | Search | Hybrid: embeddings + keyword, RRF k=60, pool=20, top 5 |
 | Keyword search reads | `chunks.content` |
-| Abbreviation expansion | Off (`EXPAND_ABBREVIATIONS = False`) |
+| **Abbreviation expansion:** on 35 cases it fixes abbreviation misses but shifts chunk boundaries, which breaks others. Next experiment: keep chunk boundaries from the original text and expand only the embedded text, with a safety margin so the expanded text stays under the 254-token limit. |
 
 ## Open questions
 
