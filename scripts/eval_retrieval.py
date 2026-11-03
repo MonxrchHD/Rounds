@@ -5,14 +5,16 @@ from rounds.embedding import load_model
 from rounds.evaluation import first_hit_rank, retrieval_metrics
 from rounds.search import hybrid_search
 
-FILE_PATH = "evals/retina-atlas/golden_cases.json"
+FILE_PATH = ["evals/golden_cases.json", "evals/retrieval_cases.json"]
 K = 5
 
-with open(FILE_PATH, encoding="utf-8") as f:
-    golden_cases = json.load(f)
+cases = []
+for path in FILE_PATH:
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    cases.extend(data["cases"])
 
-cases = [case for case in golden_cases["cases"]
-         if case["expected_viewer_pages"] is not None]
+cases = [case for case in cases if case["expected_viewer_pages"] is not None]
 model = load_model()
 ranks = []
 with get_connection() as conn:

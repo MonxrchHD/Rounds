@@ -1,0 +1,342 @@
+{
+  "source": {
+    "title": "Diagnostic Atlas of Retinal Diseases, Volume 1",
+    "chapters_used": [
+      "Ch. 1 Non-Proliferative Diabetic Retinopathy, pp. 3-17",
+      "Ch. 2 Proliferative Diabetic Retinopathy, pp. 18-28",
+      "Ch. 3 Diabetic Macular Edema, pp. 29-43",
+      "Ch. 4 Central Retinal Vein Occlusion, pp. 44-57",
+      "Ch. 5 Branch Retinal Vein Occlusion, pp. 58-66"
+    ],
+    "license": "Chapters CC BY 4.0",
+    "page_note": "source_ref.pages are printed pages; expected_viewer_pages are PDF viewer pages (printed + 12). A hit means a returned chunk's page range overlaps expected_viewer_pages.",
+    "status": "DRAFT: pages and wording need human verification against the PDF"
+  },
+  "cases": [
+    {
+      "id": "r-npdr-08",
+      "concept": "IRMA appearance and nature",
+      "source_ref": {
+        "chapter": 1,
+        "pages": "10"
+      },
+      "expected_viewer_pages": {
+        "start": 22,
+        "end": 22
+      },
+      "retrieval_query": "What do IRMA look like and what are they thought to be?"
+    },
+    {
+      "id": "r-npdr-09",
+      "concept": "Microaneurysms on OCT",
+      "source_ref": {
+        "chapter": 1,
+        "pages": "4"
+      },
+      "expected_viewer_pages": {
+        "start": 16,
+        "end": 16
+      },
+      "retrieval_query": "How do microaneurysms show up on OCT?"
+    },
+    {
+      "id": "r-npdr-10",
+      "concept": "Metabolic control targets",
+      "source_ref": {
+        "chapter": 1,
+        "pages": "15"
+      },
+      "expected_viewer_pages": {
+        "start": 27,
+        "end": 27
+      },
+      "retrieval_query": "What HbA1c should diabetic patients aim for to slow retinopathy?"
+    },
+    {
+      "id": "r-npdr-11",
+      "concept": "Fenofibrate in DR",
+      "source_ref": {
+        "chapter": 1,
+        "pages": "15"
+      },
+      "expected_viewer_pages": {
+        "start": 27,
+        "end": 27
+      },
+      "retrieval_query": "Can fenofibrate slow down diabetic retinopathy?"
+    },
+    {
+      "id": "r-npdr-12",
+      "concept": "Differential diagnosis of NPDR",
+      "source_ref": {
+        "chapter": 1,
+        "pages": "13-14"
+      },
+      "expected_viewer_pages": {
+        "start": 25,
+        "end": 26
+      },
+      "retrieval_query": "What other diseases can look like diabetic retinopathy?"
+    },
+    {
+      "id": "r-pdr-01",
+      "concept": "Progression from severe NPDR",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "18"
+      },
+      "expected_viewer_pages": {
+        "start": 30,
+        "end": 30
+      },
+      "retrieval_query": "How likely is severe NPDR to turn into PDR within a year?"
+    },
+    {
+      "id": "r-pdr-02",
+      "concept": "IRMA vs neovascularization",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "18"
+      },
+      "expected_viewer_pages": {
+        "start": 30,
+        "end": 30
+      },
+      "retrieval_query": "How do you tell IRMA apart from neovascularization?"
+    },
+    {
+      "id": "r-pdr-03",
+      "concept": "High-risk PDR criteria",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "23"
+      },
+      "expected_viewer_pages": {
+        "start": 35,
+        "end": 35
+      },
+      "retrieval_query": "What makes proliferative diabetic retinopathy high risk?"
+    },
+    {
+      "id": "r-pdr-04",
+      "concept": "Conditions that worsen PDR",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "23"
+      },
+      "expected_viewer_pages": {
+        "start": 35,
+        "end": 35
+      },
+      "retrieval_query": "What can make PDR get worse?"
+    },
+    {
+      "id": "r-pdr-05",
+      "concept": "Definition of full PRP",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "25"
+      },
+      "expected_viewer_pages": {
+        "start": 37,
+        "end": 37
+      },
+      "retrieval_query": "How many laser spots count as a full panretinal photocoagulation?"
+    },
+    {
+      "id": "r-pdr-06",
+      "concept": "Indications for vitrectomy in PDR",
+      "source_ref": {
+        "chapter": 2,
+        "pages": "26"
+      },
+      "expected_viewer_pages": {
+        "start": 38,
+        "end": 38
+      },
+      "retrieval_query": "When does someone with PDR need vitrectomy?"
+    },
+    {
+      "id": "r-dme-03",
+      "concept": "Systemic risk factors for DME",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "29"
+      },
+      "expected_viewer_pages": {
+        "start": 41,
+        "end": 41
+      },
+      "retrieval_query": "What systemic risk factors are linked to diabetic macular edema?"
+    },
+    {
+      "id": "r-dme-04",
+      "concept": "International DME severity scale",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "30"
+      },
+      "expected_viewer_pages": {
+        "start": 42,
+        "end": 42
+      },
+      "retrieval_query": "How is diabetic macular edema graded mild, moderate, or severe?"
+    },
+    {
+      "id": "r-dme-05",
+      "concept": "FA leakage patterns in DME",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "31"
+      },
+      "expected_viewer_pages": {
+        "start": 43,
+        "end": 43
+      },
+      "retrieval_query": "What leakage patterns can macular edema show on fluorescein angiography?"
+    },
+    {
+      "id": "r-dme-06",
+      "concept": "OCT changes in DME",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "35"
+      },
+      "expected_viewer_pages": {
+        "start": 47,
+        "end": 47
+      },
+      "retrieval_query": "What does OCT show in diabetic macular edema?"
+    },
+    {
+      "id": "r-dme-07",
+      "concept": "Natural history of untreated CSME",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "40"
+      },
+      "expected_viewer_pages": {
+        "start": 52,
+        "end": 52
+      },
+      "retrieval_query": "What happens if clinically significant macular edema isn't treated?"
+    },
+    {
+      "id": "r-dme-08",
+      "concept": "Side effects of intravitreal steroids",
+      "source_ref": {
+        "chapter": 3,
+        "pages": "40"
+      },
+      "expected_viewer_pages": {
+        "start": 52,
+        "end": 52
+      },
+      "retrieval_query": "What are the side effects of steroid injections for macular edema?"
+    },
+    {
+      "id": "r-crvo-01",
+      "concept": "CRVO risk factors",
+      "source_ref": {
+        "chapter": 4,
+        "pages": "44"
+      },
+      "expected_viewer_pages": {
+        "start": 56,
+        "end": 56
+      },
+      "retrieval_query": "What are the risk factors for central retinal vein occlusion?"
+    },
+    {
+      "id": "r-crvo-02",
+      "concept": "Ischemic vs non-ischemic CRVO",
+      "source_ref": {
+        "chapter": 4,
+        "pages": "46-47"
+      },
+      "expected_viewer_pages": {
+        "start": 58,
+        "end": 59
+      },
+      "retrieval_query": "How do ischemic and non-ischemic CRVO differ?"
+    },
+    {
+      "id": "r-crvo-03",
+      "concept": "FA findings in CRVO",
+      "source_ref": {
+        "chapter": 4,
+        "pages": "47"
+      },
+      "expected_viewer_pages": {
+        "start": 59,
+        "end": 59
+      },
+      "retrieval_query": "What does fluorescein angiography show in CRVO?"
+    },
+    {
+      "id": "r-crvo-04",
+      "concept": "PRP indications after CRVO",
+      "source_ref": {
+        "chapter": 4,
+        "pages": "53"
+      },
+      "expected_viewer_pages": {
+        "start": 65,
+        "end": 65
+      },
+      "retrieval_query": "When should panretinal photocoagulation be done after a CRVO?"
+    },
+    {
+      "id": "r-crvo-05",
+      "concept": "CRVO follow-up schedule",
+      "source_ref": {
+        "chapter": 4,
+        "pages": "55"
+      },
+      "expected_viewer_pages": {
+        "start": 67,
+        "end": 67
+      },
+      "retrieval_query": "How often should patients with CRVO be followed up?"
+    },
+    {
+      "id": "r-brvo-01",
+      "concept": "Most commonly affected quadrant in BRVO",
+      "source_ref": {
+        "chapter": 5,
+        "pages": "58"
+      },
+      "expected_viewer_pages": {
+        "start": 70,
+        "end": 70
+      },
+      "retrieval_query": "Which part of the retina is most often affected in a branch vein occlusion?"
+    },
+    {
+      "id": "r-brvo-02",
+      "concept": "Ischemic BRVO definition",
+      "source_ref": {
+        "chapter": 5,
+        "pages": "61"
+      },
+      "expected_viewer_pages": {
+        "start": 73,
+        "end": 73
+      },
+      "retrieval_query": "When is a branch retinal vein occlusion considered ischemic?"
+    },
+    {
+      "id": "r-brvo-03",
+      "concept": "Treatment of macular edema in BRVO",
+      "source_ref": {
+        "chapter": 5,
+        "pages": "64"
+      },
+      "expected_viewer_pages": {
+        "start": 76,
+        "end": 76
+      },
+      "retrieval_query": "How is macular edema from a branch vein occlusion treated?"
+    }
+  ]
+}
