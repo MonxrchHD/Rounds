@@ -11,7 +11,8 @@ K = 5
 with open(FILE_PATH, encoding="utf-8") as f:
     golden_cases = json.load(f)
 
-cases = [case for case in golden_cases["cases"] if case["expected_viewer_pages"] is not None]
+cases = [case for case in golden_cases["cases"]
+         if case["expected_viewer_pages"] is not None]
 model = load_model()
 ranks = []
 with get_connection() as conn:
@@ -24,4 +25,4 @@ with get_connection() as conn:
 
 hit_rate, mrr = retrieval_metrics(ranks)
 print(f"\n{len(cases)} cases | hit rate @ {K}: {hit_rate:.2f} | MRR: {mrr:.3f}")
-
+  

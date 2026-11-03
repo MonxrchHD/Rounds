@@ -21,7 +21,11 @@ CREATE TABLE IF NOT EXISTS chunks (
     document_id BIGINT NOT NULL REFERENCES documents (id) ON DELETE CASCADE,
     chunk_index INTEGER NOT NULL,
     content TEXT NOT NULL,
-    page_number INTEGER,
+    start_page_number INTEGER,
     embedding vector(384) NOT NULL,
+    end_page_number INTEGER,
     UNIQUE (document_id, chunk_index)
+    search_text TEXT
 );
+ALTER TABLE chunks
+ADD COLUMN search_text TEXT;

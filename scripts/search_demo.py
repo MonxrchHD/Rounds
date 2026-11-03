@@ -1,12 +1,21 @@
 from rounds.db import get_connection
 from rounds.embedding import load_model
-from rounds.search import search
+from rounds.search import hybrid_search, keyword_search, search
+
+QUESTION = "What causes cotton-wool spots?"
+K = 5
 
 model = load_model()
+
+
+def show(label, results):
+    print(f"=== {label} ===")
+    for rank, (chunk_id, content, start_page, end_page, title, score) in enumerate(results, start=1):
+        print(f"{rank}. pages {start_page}-{end_page} | score {score:.4f} | {content[:100]}")
+    print()
+
+
 with get_connection() as conn:
-    question = "What causes cotton-wool spots?"
-    results = search(conn, model, question, k=5)
-    for chunk_id,content, start_page, end_page, title, distance in results:
-        print(
-            f"Title: {title}, Pages: {start_page}-{end_page}, Distance: {round(distance, 3)}")
-        print(f"Content: {content[:150]}\n")
+    show("Embedding only", search(conn, model, QUESTION, k=K))
+    show("Keyword only", keyword_search(conn, QUESTION, n=K))
+    show("Hybrid", hybrid_search(conn, model, QUESTION, k=K))

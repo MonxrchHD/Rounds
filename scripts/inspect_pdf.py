@@ -1,5 +1,5 @@
 from pypdf import PdfReader
-from rounds.cleaning import clean_pages
+from rounds.cleaning import clean_pages, find_abbreviations
 from rounds.chunking import build_chunks, filter_page_range, is_reference_sentence, split_document, is_quality_sentence, split_long_sentence
 from sentence_transformers import SentenceTransformer
 
@@ -15,9 +15,7 @@ def count_tokens(text):
 
 
 pages = clean_pages(page_texts)
-assert len(pages) == len(page_texts)
-
-sentences = split_document(pages)
-for text, start, end in sentences:
-    if "Diabetic retinopathy (DR)" in text:
-        print(start, end, "|", text)
+abbreviations = find_abbreviations("\n".join(pages))
+print(len(abbreviations))
+for abbr, phrase in sorted(abbreviations.items()):
+    print(f"{abbr:<8} {phrase}")
