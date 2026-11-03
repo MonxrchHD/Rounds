@@ -68,3 +68,21 @@ def clean_pages(page_texts):
     vocab = build_vocabulary(collapsed)
     rejoined = [rejoin_hyphenated_words(text, vocab) for text in collapsed]
     return rejoined
+
+
+def find_abbreviations(text):
+    abbreviations = {}
+    for match in re.finditer(r"\(([A-Z]{2,})\)", text):
+        abbr = match.group(1)
+        before = text[:match.start()]
+        stripped_before = before.rstrip()
+        word_matches = list(re.finditer(r"[^\s,;-]+", stripped_before))
+        expansion = word_matches[-len(abbr):]
+        compare = "".join(word.group()[0].upper() for word in expansion)
+        if compare == abbr:
+            original = re.sub(r"\s+", " ", stripped_before[expansion[0].start():expansion[-1].end()])
+            abbreviations[abbr] = original.strip()
+    return abbreviations
+
+
+
