@@ -40,3 +40,7 @@ def test_find_abbreviation_on_new_page():
     text = "The patient had diabetic\nretinopathy (DR) was diagnosed."
     result = find_abbreviations(text)
     assert result == {"DR": "diabetic retinopathy"}
+
+def test_definition_followed_by_period():
+    text = "The patient had diabetic retinopathy. (DR) was diagnosed."
+    assert find_abbreviations(text) == {"DR": "diabetic retinopathy"}

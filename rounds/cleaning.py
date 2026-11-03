@@ -80,7 +80,7 @@ def find_abbreviations(text):
         expansion = word_matches[-len(abbr):]
         compare = "".join(word.group()[0].upper() for word in expansion)
         if compare == abbr:
-            original = re.sub(r"\s+", " ", stripped_before[expansion[0].start():expansion[-1].end()])
+            original = re.sub(r"\s+", " ", stripped_before[expansion[0].start():expansion[-1].end()]).rstrip(".,:;")
             abbreviations[abbr] = original.strip()
     return abbreviations
 
