@@ -84,5 +84,14 @@ def find_abbreviations(text):
             abbreviations[abbr] = original.strip()
     return abbreviations
 
+def expand_abbreviations(text, abbreviations):
+    if not abbreviations:
+        return text
+    pattern = r"\b(" + "|".join(re.escape(abbr) for abbr in abbreviations.keys()) + r")\b"
 
+    def replace_abbr(match):
+        abbr = match.group(1)
+        return f"{abbr} ({abbreviations[abbr]})"
+
+    return re.sub(pattern, replace_abbr, text)
 
