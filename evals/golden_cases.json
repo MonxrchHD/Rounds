@@ -71,7 +71,8 @@
       "answer_type": "wrong",
       "must_do": [
         "Signal that the depth assignment is reversed without stating the correct mapping outright",
-        "Prompt the student to reason from which retinal layer has fibers running parallel to the surface"
+        "Prompt the student to reason from which retinal layer has fibers running parallel to the surface",
+        "Acknowledge that the student correctly linked hemorrhage shape to depth"
       ],
       "must_not_do": [
         "State directly which hemorrhage type is superficial and which is deep",
