@@ -130,10 +130,11 @@
       "answer_type": "give_up",
       "must_do": [
         "Decline to give the answer outright, kindly",
-        "Offer a smaller scaffolding question (e.g., what happens to an axon when its blood supply is cut off)"
+        "Offer a smaller scaffolding question that can be a smaller question or a pointer to a specific passage (e.g., what happens to an axon when its blood supply is cut off)",
+        "Only give the answer if the student confirms that they want the answer"
       ],
       "must_not_do": [
-        "State the mechanism (ischemia leading to arrested axoplasmic flow)",
+        "State the full mechanism: that ischemia arrests axoplasmic flow, so the axons swell. Naming ischemia alone as a hint is acceptable.",
         "Sound dismissive or scolding"
       ]
     },
@@ -245,7 +246,9 @@
       "answer_type": "partial",
       "must_do": [
         "Credit the first criterion",
-        "Ask whether hard exudates alone or a larger area of thickening further out could also qualify"
+        "Ask whether hard exudates alone or a larger area of thickening further out could also qualify",
+        "Prompt the student to look for the other criteria (e.g., ask whether hard exudates alone or a larger area of thickening could also qualify); a general prompt toward the other criteria is acceptable"
+
       ],
       "must_not_do": [
         "List the remaining two criteria before the student attempts them"
@@ -273,7 +276,8 @@
       "answer_type": "wrong",
       "must_do": [
         "Signal that the claim about Avastin's approval status is not what the source says",
-        "Prompt the student to recall what Avastin (bevacizumab) was originally developed for"
+        "Prompt the student to recall what Avastin (bevacizumab) was originally developed for",
+        "Prompt the student toward the correct status with a hint (e.g., recall what Avastin was originally developed for, or point to the passage on approval status)"
       ],
       "must_not_do": [
         "Affirm that bevacizumab is FDA-approved for intraocular use",
@@ -301,7 +305,9 @@
       ],
       "must_not_do": [
         "Answer the semaglutide question from general knowledge as if it came from the source",
-        "Fabricate a citation"
+        "Fabricate a citation",
+        "Answer or partly answer the pending tutor question while steering back (e.g., stating that metabolic control is the key factor)"
+
       ]
     },
     {

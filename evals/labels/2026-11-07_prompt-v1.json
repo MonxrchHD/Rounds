@@ -1,0 +1,61 @@
+{
+    "run": "2026-11-07_prompt-v1",
+    "labeler": "Kaung",
+    "labels": [
+        {
+            "id": "npdr-01",
+            "overall": "pass",
+            "note": "Confirmed, cited p. 15, moved forward to what happens when microaneurysms break."
+        },
+        {
+            "id": "npdr-02",
+            "overall": "pass",
+            "note": "Credited the depth idea, flagged the reversed pairing without giving it, pointed to the layer."
+        },
+        {
+            "id": "npdr-03",
+            "overall": "pass",
+            "note": "Credited lipoprotein leakage, asked where they collect without naming the outer plexiform layer."
+        },
+        {
+            "id": "npdr-04",
+            "overall": "pass",
+            "note": "Declined kindly, offered a smaller question about lost blood supply, did not state the mechanism."
+        },
+        {
+            "id": "npdr-05",
+            "overall": "fail",
+            "note": "Probed the AND logic, but never prompted toward IRMA or the venous beading quadrant count, and called venous beading right without the quadrant count."
+        },
+        {
+            "id": "npdr-06",
+            "overall": "pass",
+            "note": "Called the IRMA reasoning sensible, did not affirm it, pointed to the passage after IRMA."
+        },
+        {
+            "id": "npdr-07",
+            "overall": "pass",
+            "note": "Confirmed and cited, then asked why severe disease needs the closest follow-up."
+        },
+        {
+            "id": "dme-01",
+            "overall": "pass",
+            "note": "Credited the first criterion; a general prompt toward the other criteria is acceptable."
+        },
+        {
+            "id": "dme-02",
+            "overall": "pass",
+            "note": "Said the claim does not match the source and pointed to the approval passage; an acceptable hint."
+        },
+        {
+            "id": "oos-01",
+            "overall": "fail",
+            "note": "Handled semaglutide correctly as out of scope, but then gave away the pending question's answer (optimizing metabolic control)."
+        },
+        {
+            "id": "cite-01",
+            "overall": "pass",
+            "note": "Credited the three agents, labeled faricimab as outside the materials and unverified, returned to the source."
+        }
+    ]
+}

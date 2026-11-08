@@ -16,7 +16,8 @@ def format_sources(results):
     blocks = []
     for _chunk_id, content, start_page, end_page, title, _rrf_score in results:
         page_range = f"{start_page}-{end_page}" if start_page != end_page else f"{start_page}"
-        blocks.append(f'<source title="{title}" pages="{page_range}">\n{content}\n</source>')
+        blocks.append(
+            f'<source title="{title}" pages="{page_range}">\n{content}\n</source>')
     return "\n\n".join(blocks)
 
 
@@ -30,6 +31,11 @@ def extract_text(response):
 def tutor_turn(student_message, tutor_question, conn, embed_model, client):
     query = student_message + "\n\n" + tutor_question
     results = hybrid_search(conn, embed_model, query)
+    reply = generate_reply(student_message, tutor_question, results, client)
+    return reply, results
+
+
+def generate_reply(student_message, tutor_question, results, client):
     content = "\n\n".join([
         format_sources(results),
         f"<tutor_question>\n{tutor_question}\n</tutor_question>",
@@ -41,4 +47,4 @@ def tutor_turn(student_message, tutor_question, conn, embed_model, client):
         system=load_system_prompt(),
         messages=[{"role": "user", "content": content}],
     )
-    return extract_text(response), results
+    return extract_text(response)

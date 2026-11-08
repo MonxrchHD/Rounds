@@ -1,6 +1,9 @@
 import pytest
 
 from rounds.search import fuse_rankings
+from rounds.db import get_connection
+from rounds.evaluation import pages_overlap
+from rounds.search import chunks_for_pages
 
 # Fake rows: (chunk_id, filler, original_score)
 # Only the id (first value) and the last value matter to fuse_rankings.
@@ -32,3 +35,22 @@ def test_every_chunk_appears_once():
     ids = [row[0] for row in fused]
     assert len(ids) == len(set(ids))
     assert set(ids) == {30, 12, 9, 41, 7, 8, 22, 0}
+
+def test_chunks_for_pages_returns_overlapping_chunks():
+    with get_connection() as conn:
+        results = chunks_for_pages(conn, 17, 17)
+    assert results
+    for _chunk_id, _content, start_page, end_page, _title, _score in results:
+        assert pages_overlap(start_page, end_page, 17, 17)
+
+
+def test_chunks_for_pages_outside_ingested_range_is_empty():
+    with get_connection() as conn:
+        results = chunks_for_pages(conn, 1, 5)
+    assert results == []
+
+
+def test_chunks_for_pages_rows_have_six_fields():
+    with get_connection() as conn:
+        results = chunks_for_pages(conn, 17, 17)
+    assert all(len(row) == 6 for row in results)

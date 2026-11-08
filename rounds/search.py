@@ -57,3 +57,17 @@ def hybrid_search(conn, model, question, k = 5, pool = 20):
     keyword_results = keyword_search(conn, question, n = pool)
     fused_results = fuse_rankings([embedding_results, keyword_results])
     return fused_results[:k]
+
+def chunks_for_pages(conn, start_page, end_page):
+    return conn.execute(
+        """
+        SELECT chunks.id, chunks.content, chunks.start_page_number, chunks.end_page_number, documents.title, 0  AS score
+        FROM chunks
+        JOIN documents on documents.id = chunks.document_id
+        WHERE chunks.start_page_number <= %s
+          AND chunks.end_page_number >= %s
+          AND documents.status = 'ready'
+        ORDER BY chunks.chunk_index         
+        """,
+        (end_page, start_page),
+    ).fetchall()
