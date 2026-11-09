@@ -7,7 +7,7 @@ from rounds.search import chunks_for_pages, hybrid_search
 from rounds.tutor import generate_reply
 from pathlib import Path
 
-RUN_NAME = "2026-11-07_prompt-v1"
+RUN_NAME = "2026-11-08_prompt-v2"
 RUNS_DIR = Path("evals/runs")
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
 CASES_PATH = "evals/golden_cases.json"

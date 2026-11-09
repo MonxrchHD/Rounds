@@ -20,7 +20,7 @@ Results from `python -m scripts.eval_retrieval` on the `evals/retina-atlas` gold
 | 2026-11-02 | Grew eval set from 10 to 35 cases (25 retrieval-only cases from chapters 1–5); config unchanged (hybrid, expansion off) | 0.86 | 0.714 | New baseline. Lower than 0.90 partly because the original 10 had been used to tune the system. Misses: npdr-04, r-pdr-03, r-pdr-05, r-dme-07, r-brvo-03. All five involve a term the student types in full that the source mostly abbreviates (CWS, PDR, PRP, CSME, BRVO). |
 | 2026-11-02 | Abbreviation expansion on 35 cases (embeddings use expanded text, keyword search on `content`) | 0.86 | 0.677 | Not shipped: same hit rate, lower MRR. Fixed r-pdr-05 (miss → 5) and r-dme-07 (miss → 3), both abbreviation cases. Broke r-dme-05 (1 → miss) and r-brvo-02 (5 → miss), neither an abbreviation case, likely from shifted chunk boundaries. Rule set beforehand: ship only if hit rate rises. |
 | 2026-11-07 | prompt-v1, gold context (search for out-of-scope), claude-sonnet-5-5 | 9/11 | Fails: npdr-05 (no prompt toward IRMA or the quadrant count), oos-01 (gave away the pending question's answer). Run: `evals/runs/2026-11-07_prompt-v1.json` |
-
+| 2026-11-08 | prompt-v2 (+ interruption rule) | 10/11 | oos-01 fixed; npdr-05 still fails; "still open" phrasing bled into npdr-04 and dme-02 (harmless)
 ## Current configuration (shipped)
 
 | Setting | Value |
