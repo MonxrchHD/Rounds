@@ -21,7 +21,11 @@ Results from `python -m scripts.eval_retrieval` on the `evals/retina-atlas` gold
 | 2026-11-02 | Abbreviation expansion on 35 cases (embeddings use expanded text, keyword search on `content`) | 0.86 | 0.677 | Not shipped: same hit rate, lower MRR. Fixed r-pdr-05 (miss → 5) and r-dme-07 (miss → 3), both abbreviation cases. Broke r-dme-05 (1 → miss) and r-brvo-02 (5 → miss), neither an abbreviation case, likely from shifted chunk boundaries. Rule set beforehand: ship only if hit rate rises. |
 | 2026-11-07 | prompt-v1, gold context (search for out-of-scope), claude-sonnet-5-5 | 9/11 | Fails: npdr-05 (no prompt toward IRMA or the quadrant count), oos-01 (gave away the pending question's answer). Run: `evals/runs/2026-11-07_prompt-v1.json` |
 | 2026-11-08 | prompt-v2 (+ interruption rule) | 10/11 | oos-01 fixed; npdr-05 still fails; "still open" phrasing bled into npdr-04 and dme-02 (harmless)
+| 2026-11-08 | Case fix: npdr-05 rescoped to one gap per turn (conflicted with "one question at a time"); v1 and v2 re-graded | v1: 10/11, v2: 11/11 | Prompt change v1→v2 fixed 1 case (oos-01). The npdr-05 change is a case correction, not a tutor improvement. IRMA and quadrant count moved to a multi-turn case. |
+| 2026-11-08 | Refactor: real message history (opening message + tutor question as assistant turn) replaces the `<tutor_question>` tag; prompt unchanged from v2 | 11/11 | No change in behavior. "Still open" bleed from v2 didn't recur (likely run-to-run noise). "Ask your doctor" framing in oos-01 appeared again (2 of 2 runs), so v3 will target it. |
+
 ## Current configuration (shipped)
+
 
 | Setting | Value |
 |---|---|

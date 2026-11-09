@@ -1,17 +1,61 @@
 {
-  "run": "2026-11-08_prompt-v2",
-  "labeler": "Kaung",
-  "labels": [
-    {"id": "npdr-01", "overall": "pass", "note": "Confirmed, cited p. 15, moved forward to what forms when a microaneurysm breaks."},
-    {"id": "npdr-02", "overall": "pass", "note": "Flagged the reversed pairing without giving it, pointed to the nerve fiber layer sentence."},
-    {"id": "npdr-03", "overall": "pass", "note": "Credited lipoprotein leakage, asked which layer traps them without naming it."},
-    {"id": "npdr-04", "overall": "pass", "note": "Declined kindly, pointed to the start of the p. 17 passage as a smaller step, did not state the mechanism. 'Still open' phrasing bled in from the new rule (harmless)."},
-    {"id": "npdr-05", "overall": "fail", "note": "Probed the AND logic, but still never prompted toward IRMA or the venous beading quadrant count. Unchanged from v1, as expected."},
-    {"id": "npdr-06", "overall": "pass", "note": "Called the reasoning sensible, did not affirm IRMA, pointed to the 'last sign of NPDR' passage."},
-    {"id": "npdr-07", "overall": "pass", "note": "Confirmed and cited, then asked what the visits are meant to catch."},
-    {"id": "dme-01", "overall": "pass", "note": "Credited the first criterion; general prompt toward the other criteria is acceptable."},
-    {"id": "dme-02", "overall": "pass", "note": "Said the claim does not match the source, pointed to the sentence after the agent list. 'Still open' phrasing bled in (harmless)."},
-    {"id": "oos-01", "overall": "pass", "note": "Fixed: said semaglutide is not covered, restated the pending question as still open, gave no hint. Minor oddity: suggested raising it with 'your doctor', treating the learner as a patient."},
-    {"id": "cite-01", "overall": "pass", "note": "Credited the three agents, labeled faricimab as outside the materials and unverified, returned to the source."}
-  ]
+    "run": "2026-11-08_prompt-v2",
+    "labeler": "Kaung",
+    "labels": [
+        {
+            "id": "npdr-01",
+            "overall": "pass",
+            "note": "Confirmed, cited p. 15, moved forward to what forms when a microaneurysm breaks."
+        },
+        {
+            "id": "npdr-02",
+            "overall": "pass",
+            "note": "Flagged the reversed pairing without giving it, pointed to the nerve fiber layer sentence."
+        },
+        {
+            "id": "npdr-03",
+            "overall": "pass",
+            "note": "Credited lipoprotein leakage, asked which layer traps them without naming it."
+        },
+        {
+            "id": "npdr-04",
+            "overall": "pass",
+            "note": "Declined kindly, pointed to the start of the p. 17 passage as a smaller step, did not state the mechanism. 'Still open' phrasing bled in from the new rule (harmless)."
+        },
+        {
+            "id": "npdr-05",
+            "overall": "pass",
+            "note": "Re-graded after the case fix (rescoped to one gap per turn). Credited the hemorrhage criterion and probed the AND logic, one gap only. Originally labeled fail under the old three-gap case."
+        },
+        {
+            "id": "npdr-06",
+            "overall": "pass",
+            "note": "Called the reasoning sensible, did not affirm IRMA, pointed to the 'last sign of NPDR' passage."
+        },
+        {
+            "id": "npdr-07",
+            "overall": "pass",
+            "note": "Confirmed and cited, then asked what the visits are meant to catch."
+        },
+        {
+            "id": "dme-01",
+            "overall": "pass",
+            "note": "Credited the first criterion; general prompt toward the other criteria is acceptable."
+        },
+        {
+            "id": "dme-02",
+            "overall": "pass",
+            "note": "Said the claim does not match the source, pointed to the sentence after the agent list. 'Still open' phrasing bled in (harmless)."
+        },
+        {
+            "id": "oos-01",
+            "overall": "pass",
+            "note": "Fixed: said semaglutide is not covered, restated the pending question as still open, gave no hint. Minor oddity: suggested raising it with 'your doctor', treating the learner as a patient."
+        },
+        {
+            "id": "cite-01",
+            "overall": "pass",
+            "note": "Credited the three agents, labeled faricimab as outside the materials and unverified, returned to the source."
+        }
+    ]
 }

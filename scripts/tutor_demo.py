@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from rounds.db import get_connection
 from rounds.embedding import load_model
-from rounds.tutor import tutor_turn
+from rounds.tutor import tutor_turn, OPENING_MESSAGE
 
 CASES_PATH = "evals/golden_cases.json"
 CASE_ID = "npdr-04"
@@ -24,9 +24,14 @@ embed_model = load_model()
 client = anthropic.Anthropic()
 
 # 4. Run one tutor turn
+history = [{"role": "user", "content": OPENING_MESSAGE}, {"role": "assistant", "content": case["tutor_question"]}]
 with get_connection() as conn:
-    reply, results = tutor_turn(case["student_answer"], case["tutor_question"], conn, embed_model, client)
-
+    reply, results = tutor_turn(case["student_answer"], history, conn, embed_model, client)
+print(f"TUTOR QUESTION: ", case["tutor_question"])
+print(f"STUDENT RESPONSE: ", case["student_answer"])
+print("TUTOR RESPONSE: ", reply)
+print(f"MUST DO: ", case["must_do"])
+print(f"MUST NOT DO: ", case["must_not_do"])
 print("RETRIEVED PAGES:")
 for _chunk_id, _content, start_page, end_page, title, score in results:
     print(f"  {start_page}-{end_page}  (score {score:.4f})")

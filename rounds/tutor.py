@@ -4,7 +4,7 @@ from rounds.search import hybrid_search
 
 MODEL = "claude-sonnet-5-5"
 MAX_TOKENS = 1000
-
+OPENING_MESSAGE = "Start the session."
 SYSTEM_PROMPT_PATH = Path(__file__).parent / "prompts" / "tutor_system.md"
 
 
@@ -28,23 +28,27 @@ def extract_text(response):
     return "\n\n".join(texts)
 
 
-def tutor_turn(student_message, tutor_question, conn, embed_model, client):
-    query = student_message + "\n\n" + tutor_question
+def tutor_turn(student_message, history, conn, embed_model, client):
+    query = student_message + "\n\n" + history[-1]["content"]
     results = hybrid_search(conn, embed_model, query)
-    reply = generate_reply(student_message, tutor_question, results, client)
+    reply = generate_reply(student_message, history, results, client)
     return reply, results
 
 
-def generate_reply(student_message, tutor_question, results, client):
-    content = "\n\n".join([
-        format_sources(results),
-        f"<tutor_question>\n{tutor_question}\n</tutor_question>",
-        f"<student_message>\n{student_message}\n</student_message>",
-    ])
+def generate_reply(student_message, history, results, client):
+    messages = build_messages(history, student_message, results)
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=load_system_prompt(),
-        messages=[{"role": "user", "content": content}],
+        messages= messages,
     )
     return extract_text(response)
+
+def build_messages(history, student_message, results):
+    content = "\n\n".join([
+        format_sources(results),
+        f"<student_message>\n{student_message}\n</student_message>",
+    ])
+    new_messages = {"role": "user", "content": content }
+    return history + [new_messages]

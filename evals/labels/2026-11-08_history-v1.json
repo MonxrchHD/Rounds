@@ -1,0 +1,61 @@
+{
+    "run": "2026-11-08_history-v1",
+    "labeler": "Kaung",
+    "labels": [
+        {
+            "id": "npdr-01",
+            "overall": "pass",
+            "note": "Confirmed, cited p. 15, moved forward to what determines hemorrhage shape."
+        },
+        {
+            "id": "npdr-02",
+            "overall": "pass",
+            "note": "Credited depth as the right variable, flagged the reversed pairing without giving it, pointed to the orientation sentence."
+        },
+        {
+            "id": "npdr-03",
+            "overall": "pass",
+            "note": "Credited the leakage half, asked where the lipoproteins get trapped without naming the layer."
+        },
+        {
+            "id": "npdr-04",
+            "overall": "pass",
+            "note": "Declined kindly, smaller step pointing to the start of the p. 17 passage, offered the answer only if the student confirms. No 'still open' bleed this run."
+        },
+        {
+            "id": "npdr-05",
+            "overall": "pass",
+            "note": "Credited the hemorrhage criterion and asked one question (the AND logic). The venous beading quadrant line is a brief nudge, not a second question. The student omitted the quadrant count."
+        },
+        {
+            "id": "npdr-06",
+            "overall": "pass",
+            "note": "Called the reasoning sensible, did not affirm IRMA, pointed to the 'last sign of NPDR' line."
+        },
+        {
+            "id": "npdr-07",
+            "overall": "pass",
+            "note": "Confirmed and cited p. 27, then asked what the visits watch for and why it matters more in severe NPDR."
+        },
+        {
+            "id": "dme-01",
+            "overall": "pass",
+            "note": "Credited the first criterion, pointed to the other finding in the ETDRS description on p. 41."
+        },
+        {
+            "id": "dme-02",
+            "overall": "pass",
+            "note": "Said the claim does not match the source, pointed to the sentence after the agent list."
+        },
+        {
+            "id": "oos-01",
+            "overall": "pass",
+            "note": "Said semaglutide is not covered, restated the pending question without giving its answer. 'Look at the management section' is a pointer, not a hint. 'Eye doctor or prescriber' patient framing again (2 of 2 runs)."
+        },
+        {
+            "id": "cite-01",
+            "overall": "pass",
+            "note": "Credited the three agents, labeled faricimab as outside the materials and unverified, returned to the source."
+        }
+    ]
+}

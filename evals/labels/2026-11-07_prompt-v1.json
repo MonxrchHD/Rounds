@@ -24,8 +24,8 @@
         },
         {
             "id": "npdr-05",
-            "overall": "fail",
-            "note": "Probed the AND logic, but never prompted toward IRMA or the venous beading quadrant count, and called venous beading right without the quadrant count."
+            "overall": "pass",
+            "note": "Re-graded after the case fix (rescoped to one gap per turn). Credited the hemorrhage criterion and probed the AND logic, one gap only. Originally labeled fail under the old three-gap case."
         },
         {
             "id": "npdr-06",

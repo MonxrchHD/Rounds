@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 from rounds.db import get_connection
 from rounds.embedding import load_model
 from rounds.search import chunks_for_pages, hybrid_search
-from rounds.tutor import generate_reply
+from rounds.tutor import generate_reply, OPENING_MESSAGE
 from pathlib import Path
 
-RUN_NAME = "2026-11-08_prompt-v2"
+RUN_NAME = "2026-11-08_history-v1"
 RUNS_DIR = Path("evals/runs")
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
 CASES_PATH = "evals/golden_cases.json"
@@ -32,7 +32,7 @@ with get_connection() as conn:
     for case in cases:
         student = case["student_answer"]
         tutor = case["tutor_question"]
-
+        history = [{"role": "user", "content": OPENING_MESSAGE}, {"role": "assistant", "content": tutor}]
         if case["expected_viewer_pages"] is not None:
             start, end = case["expected_viewer_pages"]["start"], case["expected_viewer_pages"]["end"]
             result = chunks_for_pages(conn, start, end)
@@ -41,7 +41,7 @@ with get_connection() as conn:
             question = student + "\n\n" + tutor
             result = hybrid_search(conn, embed_model, question)
             context = "search"
-        reply = generate_reply(student, tutor, result, client)
+        reply = generate_reply(student, history, result, client)
         pages = [
             (start_page, end_page)
             for _chunk_id, _content, start_page, end_page, _title, _score in result

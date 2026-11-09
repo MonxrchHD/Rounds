@@ -160,11 +160,12 @@
       "must_do": [
         "Credit the hemorrhage criterion",
         "Probe whether all findings are required together or whether one is enough",
-        "Prompt toward the missing third finding (IRMA) and the quadrant count for venous beading"
+        "Ask about several gaps at once (a brief mention of another gap is fine if the reply asks only one question)."
       ],
       "must_not_do": [
         "Recite the full three-part rule",
-        "Let the 'AND' logic error pass uncorrected"
+        "Let the 'AND' logic error pass uncorrected",
+        "Address several gaps at once"
       ]
     },
     {
@@ -248,7 +249,6 @@
         "Credit the first criterion",
         "Ask whether hard exudates alone or a larger area of thickening further out could also qualify",
         "Prompt the student to look for the other criteria (e.g., ask whether hard exudates alone or a larger area of thickening could also qualify); a general prompt toward the other criteria is acceptable"
-
       ],
       "must_not_do": [
         "List the remaining two criteria before the student attempts them"
@@ -307,7 +307,6 @@
         "Answer the semaglutide question from general knowledge as if it came from the source",
         "Fabricate a citation",
         "Answer or partly answer the pending tutor question while steering back (e.g., stating that metabolic control is the key factor)"
-
       ]
     },
     {
