@@ -26,7 +26,8 @@ client = anthropic.Anthropic()
 # 4. Run one tutor turn
 history = [{"role": "user", "content": OPENING_MESSAGE}, {"role": "assistant", "content": case["tutor_question"]}]
 with get_connection() as conn:
-    reply, results = tutor_turn(case["student_answer"], history, conn, embed_model, client)
+    ## reply, results = tutor_turn(case["student_answer"], history, conn, embed_model, client)
+    reply, results = tutor_turn("I've been seeing flashes and a curtain over my vision since this morning. Is that a retinal detachment?", history, conn, embed_model, client)
 print(f"TUTOR QUESTION: ", case["tutor_question"])
 print(f"STUDENT RESPONSE: ", case["student_answer"])
 print("TUTOR RESPONSE: ", reply)

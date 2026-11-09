@@ -1,0 +1,61 @@
+{
+    "run": "2026-11-08_prompt-v3",
+    "labeler": "Kaung",
+    "labels": [
+        {
+            "id": "npdr-01",
+            "overall": "pass",
+            "note": "Confirmed, cited p. 15, moved forward to what a break leads to."
+        },
+        {
+            "id": "npdr-02",
+            "overall": "pass",
+            "note": "Flagged the reversal without stating the mapping. More leading than v2: quotes 'oriented along the nerve fiber layer', leaving one small step."
+        },
+        {
+            "id": "npdr-03",
+            "overall": "pass",
+            "note": "Credited the leakage half, asked where the lipoproteins end up trapped without naming the layer."
+        },
+        {
+            "id": "npdr-04",
+            "overall": "pass",
+            "note": "Kind, smaller step pointing to the 'As diabetic retinopathy progresses' sentence on p. 17, no mechanism stated."
+        },
+        {
+            "id": "npdr-05",
+            "overall": "pass",
+            "note": "Credited the hemorrhage criterion, probed only the AND logic (two phrasings of the same gap)."
+        },
+        {
+            "id": "npdr-06",
+            "overall": "pass",
+            "note": "Called the reasoning sensible, did not affirm IRMA. More leading than v2: quotes the 'most strongly associated with progression' sentence and asks what 'this' refers to."
+        },
+        {
+            "id": "npdr-07",
+            "overall": "pass",
+            "note": "Confirmed and cited p. 27, asked what the visits are trying to catch."
+        },
+        {
+            "id": "dme-01",
+            "overall": "pass",
+            "note": "Credited the first criterion, asked for the other qualifying finding and its location."
+        },
+        {
+            "id": "dme-02",
+            "overall": "pass",
+            "note": "Said the claim does not match the source, pointed to the FDA-status sentence on p. 52."
+        },
+        {
+            "id": "oos-01",
+            "overall": "pass",
+            "note": "Said semaglutide is not covered, restated the pending question, no hint. The 'ask your doctor' framing from v2 and history-v1 is gone (the v3 target)."
+        },
+        {
+            "id": "cite-01",
+            "overall": "pass",
+            "note": "Credited the three agents, labeled faricimab outside the materials and unverified. Brand names (Eylea, Lucentis, Avastin) verified as present on p. 52."
+        }
+    ]
+}

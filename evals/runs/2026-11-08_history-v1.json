@@ -1,241 +1,241 @@
 [
-  {
-    "id": "npdr-01",
-    "reply": "Yes, that matches the source. Microaneurysms are the hallmark, and they are small dilations of the capillaries from weakened walls and pericyte loss (p. 15).\n\nNow for the next step. Microaneurysms may eventually break, which produces intraretinal hemorrhages. Those hemorrhages don't always look the same: some are flame or splinter-shaped, and others are round dots or blots. What do you think determines which appearance a hemorrhage takes? Think about where in the retina the broken microaneurysm sits and how the tissue is arranged there.",
-    "pages": [
-      [
-        15,
-        15
-      ],
-      [
-        15,
-        15
-      ],
-      [
-        15,
-        16
-      ]
-    ],
-    "student answer": "Microaneurysms. The capillary walls weaken because the pericytes are lost, so they balloon out.",
-    "tutor question": "What is the earliest hallmark lesion of diabetic retinopathy, and what goes wrong in the capillary to produce it?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-02",
-    "reply": "You've picked the right variable: depth in the retina decides the shape. But the pairing you gave doesn't match the source (p. 15), so let's check it.\n\nReread the sentence about where the broken microaneurysms are located. Which layers does it link to a flame or splinter-like appearance, and what structure does it say that hemorrhage is oriented along?",
-    "pages": [
-      [
-        15,
-        15
-      ],
-      [
-        15,
-        15
-      ],
-      [
-        15,
-        16
-      ]
-    ],
-    "student answer": "Flame hemorrhages are deep in the retina and dot-blot ones are superficial.",
-    "tutor question": "Why do some intraretinal hemorrhages look flame-shaped and others look like dots or blots?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-03",
-    "reply": "You've got the first half. The source says lipoproteins diffuse out of microaneurysms or weakened capillaries (p. 16). That's the \"what\" and the \"where from.\"\n\nMy question also asked where in the retina they collect. According to the excerpt, where do those lipoproteins end up trapped?",
-    "pages": [
-      [
-        15,
-        16
-      ],
-      [
-        16,
-        16
-      ],
-      [
-        16,
-        17
-      ]
-    ],
-    "student answer": "They're lipid deposits that leak out of damaged vessels.",
-    "tutor question": "What are hard exudates, and where in the retina do they collect?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-04",
-    "reply": "I can tell this one feels like a lot, but working it out yourself will help it stick far better than hearing it from me. Let's start with something smaller.\n\nLook at the start of the passage on page 17. As diabetic retinopathy progresses, the arterioles and capillaries get damaged. What does the text say this damage leads to?\n\nIf you'd still rather have the full answer after that, just say so and I'll give it to you.",
-    "pages": [
-      [
-        16,
-        17
-      ],
-      [
-        17,
-        18
-      ]
-    ],
-    "student answer": "I don't know, can you just tell me the answer?",
-    "tutor question": "What causes a cotton-wool spot at the cellular level?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-05",
-    "reply": "You've got two real criteria from Table 1: 20 or more intraretinal hemorrhages in each of the 4 quadrants, and definite venous beading (p. 24-25). Venous beading also has its own quadrant requirement, so check that detail in the table.\n\nNow look at the words that introduce the list of findings in the table. Do they say a patient needs all of these together, or something different?",
-    "pages": [
-      [
-        22,
-        24
-      ],
-      [
-        24,
-        25
-      ],
-      [
-        25,
-        26
-      ]
-    ],
-    "student answer": "They need 20 hemorrhages in all four quadrants and venous beading.",
-    "tutor question": "What findings make a patient's NPDR 'severe'?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-06",
-    "reply": "That doesn't match the source, though your reasoning is sensible. The source does say IRMA are \"probably intraretinal new vessels,\" but it also says \"it is not clear what their nature is,\" and that they may be intraretinal shunts bypassing non-perfused areas (pp. 21-22).\n\nLook at how that passage ends. It names the \"last sign of NPDR\" and says what that sign translates. What is that sign, and what underlying problem does it point to?",
-    "pages": [
-      [
-        21,
-        22
-      ],
-      [
-        22,
-        24
-      ]
-    ],
-    "student answer": "IRMA, because those are basically new vessels already.",
-    "tutor question": "Of the NPDR findings, which one is most strongly associated with progression to proliferative disease?",
-    "context": "gold"
-  },
-  {
-    "id": "npdr-07",
-    "reply": "That's correct, and it matches the source: mild NPDR once a year, moderate every six to 12 months, and severe quarterly (p. 27).\n\nNow think about the reasoning behind it. The follow-up interval gets shorter as the disease gets more severe. What do you think the doctor is watching for at these visits, and why would that matter more often in severe NPDR?",
-    "pages": [
-      [
-        26,
-        27
-      ],
-      [
-        27,
-        27
-      ],
-      [
-        27,
-        28
-      ]
-    ],
-    "student answer": "Mild once a year, moderate every 6 to 12 months, severe every 3 months.",
-    "tutor question": "How often should mild, moderate, and severe NPDR be followed up?",
-    "context": "gold"
-  },
-  {
-    "id": "dme-01",
-    "reply": "That's right, and it matches one of the criteria for CSME (pp. 41-42). But the source gives more than one way for macular edema to qualify as clinically significant.\n\nOn p. 41, the ETDRS description of DME mentions a finding besides retinal thickening. What is it, and how might it count toward CSME if it sits near the center of the macula?",
-    "pages": [
-      [
-        40,
-        41
-      ],
-      [
-        41,
-        41
-      ],
-      [
-        41,
-        42
-      ]
-    ],
-    "student answer": "When there's thickening within 500 microns of the center of the macula.",
-    "tutor question": "What makes diabetic macular edema 'clinically significant'?",
-    "context": "gold"
-  },
-  {
-    "id": "dme-02",
-    "reply": "That doesn't match your uploaded text. Your reasoning might come from what you know of Avastin outside the material, but let's see what the source says. Look at the passage on anti-VEGF therapy (p. 52), right after it lists the three most commonly used agents. How many of the three does it say the FDA has approved for intraocular use, and what does that leave for the third one?",
-    "pages": [
-      [
-        51,
-        52
-      ],
-      [
-        52,
-        52
-      ],
-      [
-        52,
-        52
-      ],
-      [
-        52,
-        53
-      ]
-    ],
-    "student answer": "None of them, Avastin is FDA approved for the eye too.",
-    "tutor question": "Which of the three common anti-VEGF agents for DME is used off-label in the eye?",
-    "context": "gold"
-  },
-  {
-    "id": "oos-01",
-    "reply": "Your uploaded material doesn't cover semaglutide, so I can't say whether it affects diabetic retinopathy. For a question like that, your eye doctor or prescriber is the right person to ask.\n\nMy earlier question is still open: **which systemic factors does the chapter say slow the progression of DR?** Take a look at the management section and tell me what you find.",
-    "pages": [
-      [
-        27,
-        27
-      ],
-      [
-        28,
-        29
-      ],
-      [
-        26,
-        27
-      ],
-      [
-        15,
-        15
-      ],
-      [
-        38,
-        40
-      ]
-    ],
-    "student answer": "Wait, before that: does semaglutide make diabetic retinopathy worse?",
-    "tutor question": "Which systemic factors does the chapter say slow the progression of DR?",
-    "context": "search"
-  },
-  {
-    "id": "cite-01",
-    "reply": "Yes, aflibercept, ranibizumab, and bevacizumab are the three agents your text names as the most commonly used VEGF inhibitors for DME (p. 52).\n\nYour point about faricimab and the 2022 FDA announcement is outside your uploaded materials, unverified. The atlas excerpts don't mention it, so I can't confirm or deny it. It's good that you're keeping up with newer sources, though.\n\nBack to the text: it separates those three agents by regulatory status. Which one is not approved for intraocular use, and how is it still used in practice?",
-    "pages": [
-      [
-        51,
-        52
-      ],
-      [
-        52,
-        52
-      ],
-      [
-        52,
-        52
-      ],
-      [
-        52,
-        53
-      ]
-    ],
-    "student answer": "Aflibercept, ranibizumab, and bevacizumab, but faricimab is also approved for DME now. I read the FDA approval announcement from 2022.",
-    "tutor question": "What are the most commonly used anti-VEGF agents for DME?",
-    "context": "gold"
-  }
+    {
+        "id": "npdr-01",
+        "reply": "Yes, that matches the source. Microaneurysms are the hallmark, and they are small dilations of the capillaries from weakened walls and pericyte loss (p. 15).\n\nNow for the next step. Microaneurysms may eventually break, which produces intraretinal hemorrhages. Those hemorrhages don't always look the same: some are flame or splinter-shaped, and others are round dots or blots. What do you think determines which appearance a hemorrhage takes? Think about where in the retina the broken microaneurysm sits and how the tissue is arranged there.",
+        "pages": [
+            [
+                15,
+                15
+            ],
+            [
+                15,
+                15
+            ],
+            [
+                15,
+                16
+            ]
+        ],
+        "student answer": "Microaneurysms. The capillary walls weaken because the pericytes are lost, so they balloon out.",
+        "tutor question": "What is the earliest hallmark lesion of diabetic retinopathy, and what goes wrong in the capillary to produce it?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-02",
+        "reply": "You've picked the right variable: depth in the retina decides the shape. But the pairing you gave doesn't match the source (p. 15), so let's check it.\n\nReread the sentence about where the broken microaneurysms are located. Which layers does it link to a flame or splinter-like appearance, and what structure does it say that hemorrhage is oriented along?",
+        "pages": [
+            [
+                15,
+                15
+            ],
+            [
+                15,
+                15
+            ],
+            [
+                15,
+                16
+            ]
+        ],
+        "student answer": "Flame hemorrhages are deep in the retina and dot-blot ones are superficial.",
+        "tutor question": "Why do some intraretinal hemorrhages look flame-shaped and others look like dots or blots?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-03",
+        "reply": "You've got the first half. The source says lipoproteins diffuse out of microaneurysms or weakened capillaries (p. 16). That's the \"what\" and the \"where from.\"\n\nMy question also asked where in the retina they collect. According to the excerpt, where do those lipoproteins end up trapped?",
+        "pages": [
+            [
+                15,
+                16
+            ],
+            [
+                16,
+                16
+            ],
+            [
+                16,
+                17
+            ]
+        ],
+        "student answer": "They're lipid deposits that leak out of damaged vessels.",
+        "tutor question": "What are hard exudates, and where in the retina do they collect?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-04",
+        "reply": "I can tell this one feels like a lot, but working it out yourself will help it stick far better than hearing it from me. Let's start with something smaller.\n\nLook at the start of the passage on page 17. As diabetic retinopathy progresses, the arterioles and capillaries get damaged. What does the text say this damage leads to?\n\nIf you'd still rather have the full answer after that, just say so and I'll give it to you.",
+        "pages": [
+            [
+                16,
+                17
+            ],
+            [
+                17,
+                18
+            ]
+        ],
+        "student answer": "I don't know, can you just tell me the answer?",
+        "tutor question": "What causes a cotton-wool spot at the cellular level?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-05",
+        "reply": "You've got two real criteria from Table 1: 20 or more intraretinal hemorrhages in each of the 4 quadrants, and definite venous beading (p. 24-25). Venous beading also has its own quadrant requirement, so check that detail in the table.\n\nNow look at the words that introduce the list of findings in the table. Do they say a patient needs all of these together, or something different?",
+        "pages": [
+            [
+                22,
+                24
+            ],
+            [
+                24,
+                25
+            ],
+            [
+                25,
+                26
+            ]
+        ],
+        "student answer": "They need 20 hemorrhages in all four quadrants and venous beading.",
+        "tutor question": "What findings make a patient's NPDR 'severe'?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-06",
+        "reply": "That doesn't match the source, though your reasoning is sensible. The source does say IRMA are \"probably intraretinal new vessels,\" but it also says \"it is not clear what their nature is,\" and that they may be intraretinal shunts bypassing non-perfused areas (pp. 21-22).\n\nLook at how that passage ends. It names the \"last sign of NPDR\" and says what that sign translates. What is that sign, and what underlying problem does it point to?",
+        "pages": [
+            [
+                21,
+                22
+            ],
+            [
+                22,
+                24
+            ]
+        ],
+        "student answer": "IRMA, because those are basically new vessels already.",
+        "tutor question": "Of the NPDR findings, which one is most strongly associated with progression to proliferative disease?",
+        "context": "gold"
+    },
+    {
+        "id": "npdr-07",
+        "reply": "That's correct, and it matches the source: mild NPDR once a year, moderate every six to 12 months, and severe quarterly (p. 27).\n\nNow think about the reasoning behind it. The follow-up interval gets shorter as the disease gets more severe. What do you think the doctor is watching for at these visits, and why would that matter more often in severe NPDR?",
+        "pages": [
+            [
+                26,
+                27
+            ],
+            [
+                27,
+                27
+            ],
+            [
+                27,
+                28
+            ]
+        ],
+        "student answer": "Mild once a year, moderate every 6 to 12 months, severe every 3 months.",
+        "tutor question": "How often should mild, moderate, and severe NPDR be followed up?",
+        "context": "gold"
+    },
+    {
+        "id": "dme-01",
+        "reply": "That's right, and it matches one of the criteria for CSME (pp. 41-42). But the source gives more than one way for macular edema to qualify as clinically significant.\n\nOn p. 41, the ETDRS description of DME mentions a finding besides retinal thickening. What is it, and how might it count toward CSME if it sits near the center of the macula?",
+        "pages": [
+            [
+                40,
+                41
+            ],
+            [
+                41,
+                41
+            ],
+            [
+                41,
+                42
+            ]
+        ],
+        "student answer": "When there's thickening within 500 microns of the center of the macula.",
+        "tutor question": "What makes diabetic macular edema 'clinically significant'?",
+        "context": "gold"
+    },
+    {
+        "id": "dme-02",
+        "reply": "That doesn't match your uploaded text. Your reasoning might come from what you know of Avastin outside the material, but let's see what the source says. Look at the passage on anti-VEGF therapy (p. 52), right after it lists the three most commonly used agents. How many of the three does it say the FDA has approved for intraocular use, and what does that leave for the third one?",
+        "pages": [
+            [
+                51,
+                52
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                52,
+                53
+            ]
+        ],
+        "student answer": "None of them, Avastin is FDA approved for the eye too.",
+        "tutor question": "Which of the three common anti-VEGF agents for DME is used off-label in the eye?",
+        "context": "gold"
+    },
+    {
+        "id": "oos-01",
+        "reply": "Your uploaded material doesn't cover semaglutide, so I can't say whether it affects diabetic retinopathy. For a question like that, your eye doctor or prescriber is the right person to ask.\n\nMy earlier question is still open: **which systemic factors does the chapter say slow the progression of DR?** Take a look at the management section and tell me what you find.",
+        "pages": [
+            [
+                27,
+                27
+            ],
+            [
+                28,
+                29
+            ],
+            [
+                26,
+                27
+            ],
+            [
+                15,
+                15
+            ],
+            [
+                38,
+                40
+            ]
+        ],
+        "student answer": "Wait, before that: does semaglutide make diabetic retinopathy worse?",
+        "tutor question": "Which systemic factors does the chapter say slow the progression of DR?",
+        "context": "search"
+    },
+    {
+        "id": "cite-01",
+        "reply": "Yes, aflibercept, ranibizumab, and bevacizumab are the three agents your text names as the most commonly used VEGF inhibitors for DME (p. 52).\n\nYour point about faricimab and the 2022 FDA announcement is outside your uploaded materials, unverified. The atlas excerpts don't mention it, so I can't confirm or deny it. It's good that you're keeping up with newer sources, though.\n\nBack to the text: it separates those three agents by regulatory status. Which one is not approved for intraocular use, and how is it still used in practice?",
+        "pages": [
+            [
+                51,
+                52
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                52,
+                52
+            ],
+            [
+                52,
+                53
+            ]
+        ],
+        "student answer": "Aflibercept, ranibizumab, and bevacizumab, but faricimab is also approved for DME now. I read the FDA approval announcement from 2022.",
+        "tutor question": "What are the most commonly used anti-VEGF agents for DME?",
+        "context": "gold"
+    }
 ]
