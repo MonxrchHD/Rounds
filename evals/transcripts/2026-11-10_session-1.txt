@@ -1,0 +1,31 @@
+bot: What is the earliest hallmark lesion of diabetic retinopathy, and what goes wrong in the capillary to produce it?
+You: Microaneurysms. The capillary walls weaken because the pericytes are lost, so they balloon out.
+Bot:  Correct. The source calls microaneurysms the hallmark of DR, describing them as small dilations of the capillaries due to weakening of their walls and the loss of pericytes (p. 15).
+
+Now let's follow the damage forward. Once those capillary walls are compromised, what do you think happens to the fluid and other contents of the vessel, and what clinical findings might that produce in the retina?
+You: It can lead to edema?
+Bot:  Yes, that matches the source. Capillary wall damage leads to leakage of fluid, which accumulates in the retina and produces macular edema, seen as areas of retinal thickening (p. 16).
+
+But fluid isn't the only thing that gets out of a damaged vessel. Besides fluid, what other contents of the vessel might escape, and what visible lesions could each one produce in the retina?
+You: some dot blots and hemmohrages?
+Bot:  You're on the right track with hemorrhages. The source says deep intraretinal hemorrhages appear as small red dots, much like microaneurysms, while superficial ones are splinter or flame-shaped and follow the nerve fiber layer (p. 16).
+
+Hemorrhages account for the blood, and edema accounts for the fluid. But the source describes another kind of lesion that looks quite different: irregular yellow-white spots lying slightly deeper in the retina. What component leaking from the damaged capillaries do you think produces those, and where does it get trapped?
+You: Before that, what did you say about pericytes
+Bot:  It was your point, which I confirmed: microaneurysms are small capillary dilations caused by weakened walls and the loss of pericytes (p. 15). Pericytes help support the capillary wall, so losing them is what lets it balloon outward.
+
+My question about the yellow-white spots is still open. The source describes irregular yellow-white spots lying slightly deeper in the retina. What component leaking from the damaged capillaries produces them, and where does it get trapped?
+You: Im not sure, can you give me the answer?
+Bot:  Working this out yourself helps you remember it much better than hearing it, so let's try a smaller step first.
+
+The source says capillary wall damage leaks "fluids and macromolecules" (p. 16). The fluid builds up as edema. The yellow-white spots come from the macromolecules instead. Which large, fat-carrying particles circulating in the blood might leave a yellowish deposit once they leak out?
+
+If you'd still prefer that I just give you the full answer, tell me and I will.
+You: Ahh I see the lesions would be called an ERM   
+Bot:  That doesn't match what the source describes for these yellow-white spots, and the passages I have don't link them to an ERM. Guessing a name is a reasonable instinct, but let's work from the mechanism instead.
+
+Reread the passage on page 16 about what diffuses out of microaneurysms and weakened capillaries. What substance does it say leaks out, and in which retinal layer does it get trapped? Once you have those two pieces, the lesion's name should follow.
+You: 
+Bot: I did not quite catch that.
+
+You: QuIt

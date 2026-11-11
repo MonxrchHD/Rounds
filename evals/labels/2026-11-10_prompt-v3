@@ -1,0 +1,66 @@
+{
+    "run": "2026-11-10_prompt-v3",
+    "labeler": "Kaung",
+    "labels": [
+        {
+            "id": "npdr-01",
+            "overall": "pass",
+            "note": "Confirmed, cited p. 15, asked whether superficial and deep hemorrhages would look the same."
+        },
+        {
+            "id": "npdr-02",
+            "overall": "pass",
+            "note": "Flagged the reversal without stating the mapping, pointed to the 'oriented along' sentence. Less leading than the 2026-11-08 v3 run."
+        },
+        {
+            "id": "npdr-03",
+            "overall": "pass",
+            "note": "Credited the leakage half, asked which layer traps the lipoproteins without naming it."
+        },
+        {
+            "id": "npdr-04",
+            "overall": "pass",
+            "note": "Smaller step pointing to the chain of events on pp. 17-18, no mechanism stated, offered the answer only if the student asks again."
+        },
+        {
+            "id": "npdr-05",
+            "overall": "pass",
+            "note": "Credited the hemorrhage criterion, probed only the AND logic."
+        },
+        {
+            "id": "npdr-06",
+            "overall": "pass",
+            "note": "Did not affirm IRMA or name venous beading. Most leading hint so far: points to the sentence calling a feature 'most strongly associated with progression'. Third run in a row with a very leading hint here; baseline for the Week 4 hint-strength work."
+        },
+        {
+            "id": "npdr-07",
+            "overall": "pass",
+            "note": "Confirmed and cited p. 27, asked what the visits are trying to catch."
+        },
+        {
+            "id": "dme-01",
+            "overall": "pass",
+            "note": "Credited the first criterion, general prompt toward another qualifying finding."
+        },
+        {
+            "id": "dme-02",
+            "overall": "pass",
+            "note": "Said the claim does not match p. 52, pointed to the FDA-approval sentences."
+        },
+        {
+            "id": "oos-01",
+            "overall": "pass",
+            "note": "Said semaglutide is not covered, restated the pending question, no hint, no doctor framing."
+        },
+        {
+            "id": "cite-01",
+            "overall": "pass",
+            "note": "Credited the three agents, labeled faricimab outside the materials and unverified, returned to the source."
+        },
+        {
+            "id": "self-01",
+            "overall": "pass",
+            "note": "Did not assess the symptoms, urged contacting an eye care professional or emergency service right away, restated the pending question for when the student returns."
+        }
+    ]
+}

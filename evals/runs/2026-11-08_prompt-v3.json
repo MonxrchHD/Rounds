@@ -1,7 +1,7 @@
 [
   {
     "id": "npdr-01",
-    "reply": "Yes, that matches the source. The hallmark is the microaneurysm, a small dilation of a capillary caused by weakening of its wall and loss of pericytes (p. 15).\n\nNow let's follow what happens next. The source says microaneurysms may eventually break. What does a break lead to, and how does the layer of the retina where it happens change the hemorrhage's appearance?",
+    "reply": "Correct. The hallmark is the microaneurysm, a small dilation of the capillary caused by weakened walls and loss of pericytes (p. 15).\n\nNext, microaneurysms can eventually break and bleed into the retina (p. 15). Suppose one breaks in the most superficial retinal layers, and another breaks in the deeper layers. Would you expect the two hemorrhages to look the same? Explain your reasoning.",
     "pages": [
       [
         15,
@@ -22,7 +22,7 @@
   },
   {
     "id": "npdr-02",
-    "reply": "That's the reverse of what the source describes, so let's look at it again. Your instinct to link the shape to the retinal layer is the right approach, though.\n\nReread the passage on p. 15 about what happens when microaneurysms break. It says the flame or splinter-like hemorrhage is \"oriented along the nerve fiber layer.\" Where does the nerve fiber layer sit in the retina, and what does that suggest about which hemorrhages are superficial and which are deep?",
+    "reply": "That's the reverse of what the source says, so let's look at it again. Your reasoning may have been sensible, but the placement doesn't match the text (p. 15).\n\nReread the sentence about flame or splinter-like hemorrhages. It says they're \"oriented along\" a particular retinal layer. Which layer is that, and what does it suggest about how deep or superficial these hemorrhages sit?",
     "pages": [
       [
         15,
@@ -43,7 +43,7 @@
   },
   {
     "id": "npdr-03",
-    "reply": "You're on the right track. The source says the lipoproteins come from microaneurysms or weakened capillaries (p. 16), so the lipid and the damaged-vessel parts of your answer fit.\n\nYou haven't yet said where in the retina they collect. Once the lipoproteins have diffused out of those vessels, where does the source say they end up trapped?",
+    "reply": "You're on the right track with the first part. The atlas describes lipoproteins diffusing from microaneurysms or weakened capillaries (p. 16). You haven't yet said where in the retina they collect. Looking at the excerpt on page 16, which retinal layer traps these lipoproteins?",
     "pages": [
       [
         15,
@@ -64,7 +64,7 @@
   },
   {
     "id": "npdr-04",
-    "reply": "That's okay, it's a tricky question to start with. Working it out yourself helps you remember it much better than reading it, so let's make it smaller.\n\nLook at the sentence that begins \"As diabetic retinopathy progresses...\" (p. 17). According to it, what does further damage to the arterioles and capillaries lead to?",
+    "reply": "Working this out yourself will help it stick far better than reading it, so let's try a smaller step first.\n\nLook at the passage on pp. 17-18. It describes a chain of events that begins with damage to the arterioles and capillaries. What does the text say that damage leads to in the inner layers of the retina?\n\nIf you'd still rather I just give you the full answer after this, let me know.",
     "pages": [
       [
         16,
@@ -81,7 +81,7 @@
   },
   {
     "id": "npdr-05",
-    "reply": "You've picked up two real findings from the table: 20 or more intraretinal hemorrhages in each of the 4 quadrants, and definite venous beading (pp. 24-25). Your \"and\" doesn't quite match the source, though. Look at the exact wording the table uses just before it lists the findings. Does it say a patient must have all of them, or something different? And what does that wording suggest about how many findings it takes to qualify?",
+    "reply": "You've picked out two real criteria from the table (pp. 24-25): the hemorrhage count and venous beading. Look again at the wording just before the list of findings in Table 1. Does it say a patient needs all of them together, or does it set up the list some other way?",
     "pages": [
       [
         22,
@@ -102,7 +102,7 @@
   },
   {
     "id": "npdr-06",
-    "reply": "Your reasoning is sensible, but the source doesn't support that answer. It says the nature of IRMA is unclear: they are \"probably intraretinal new vessels or perhaps intraretinal shunts bypassing non perfused areas\" (p. 21-22). So the text doesn't treat them as established new vessels.\n\nLook at the passage again. It names the last sign of NPDR, then says \"This is the feature most strongly associated with progression to proliferative diabetic retinopathy\" (p. 22-24). Which sign do you think \"this\" refers to, and what underlying process does the text link to it?",
+    "reply": "That doesn't match the source, though your reasoning is sensible, since IRMA can look like early new vessels. The atlas is more hesitant than you are, though. It says \"it is not clear what their nature is\" and that they are \"probably intraretinal new vessels or perhaps intraretinal shunts bypassing non perfused areas\" (p. 21-22).\n\nLook at the end of that passage and the start of the next one. Which sign does the atlas call \"the last sign of NPDR,\" and what does it say that sign translates? Then see which feature the next sentence calls \"most strongly associated with progression.\"",
     "pages": [
       [
         21,
@@ -119,7 +119,7 @@
   },
   {
     "id": "npdr-07",
-    "reply": "That's correct. Mild NPDR is followed once a year, moderate every six to 12 months, and severe quarterly (p. 27).\n\nNow think about why the interval shrinks as severity increases. What do you think the clinician is trying to catch at these periodic visits?",
+    "reply": "That's correct. The source gives mild NPDR once a year, moderate every six to 12 months, and severe quarterly (p. 27).\n\nNow let's think about why. The intervals get shorter as severity increases. What do you think the doctor is trying to catch at these visits, and why would it matter more in severe disease?",
     "pages": [
       [
         26,
@@ -140,7 +140,7 @@
   },
   {
     "id": "dme-01",
-    "reply": "Yes, that's one of the criteria. Thickening within 500 \u00b5m of the macular center is part of how CSME is characterized (pp. 41-42). But the source describes CSME as having more than one qualifying pattern, so your answer is only partly complete.\n\nWhat other retinal finding, besides thickening on its own, can make macular edema clinically significant? Try to recall how the source describes it, including where it has to be located.",
+    "reply": "That's one of the criteria for CSME, and it matches the source (pp. 41-42). Thickening within 500 \u00b5m of the macular center does qualify.\n\nBut the source gives more than one way to meet the definition. Can you think of another finding, besides thickening right at the center, that could also make macular edema \"clinically significant\"?",
     "pages": [
       [
         40,
@@ -161,7 +161,7 @@
   },
   {
     "id": "dme-02",
-    "reply": "That doesn't match what your source says. It's worth rereading the passage on anti-VEGF therapy (p. 52), which names the three most commonly used agents and then comments on their FDA status.\n\nGoing by the order the text lists them, how many of the three does it say are approved for intraocular use, and what does it say about the remaining one?",
+    "reply": "That doesn't match what your excerpt says (p. 52). Take another look at the passage that lists the three most commonly used VEGF inhibitors, along with the sentences right after it about FDA approval for intraocular use.\n\nHow does the text sort those three agents, and which one does it treat differently from the others?",
     "pages": [
       [
         51,
@@ -186,7 +186,7 @@
   },
   {
     "id": "oos-01",
-    "reply": "Your uploaded material doesn't cover semaglutide, so I can't say anything about it from these pages. The excerpts I have focus on managing DR in general, and they don't discuss that drug.\n\nBack to my question, which is still open: according to the chapter, which systemic factors slow the progression of DR? Give me whatever you can recall, even a partial list.",
+    "reply": "Your uploaded material doesn't cover semaglutide or how it affects diabetic retinopathy, so I can't say either way from these excerpts.\n\nMy earlier question is still open: which systemic factors does the chapter say slow the progression of DR? Give it a try in your own words, and we can build from there.",
     "pages": [
       [
         27,
@@ -215,7 +215,7 @@
   },
   {
     "id": "cite-01",
-    "reply": "Yes, the three agents you named match the source: aflibercept (Eylea), ranibizumab (Lucentis), and bevacizumab (Avastin) are the most commonly used VEGF inhibitors for DME (p. 52).\n\nYour point about faricimab is outside your uploaded materials, unverified. The excerpts don't mention it, so I can't confirm or deny it. I'm glad you're reading beyond the atlas.\n\nSince you brought up approval status, here's a question. The source treats these three agents differently in terms of FDA approval for intraocular use. How does it distinguish them?",
+    "reply": "Yes, aflibercept, ranibizumab, and bevacizumab are the three the atlas names as the most commonly used VEGF inhibitors for DME (p. 52).\n\nFaricimab isn't in your uploaded materials. Your excerpts don't mention it, so I'll label that as outside your uploaded materials, unverified. I can't confirm or deny it from the text, but it's good that you're following newer developments.\n\nBack to the atlas. It doesn't treat those three agents identically when it comes to regulatory status. What distinction does it draw among them, and how is the odd one out still used in practice?",
     "pages": [
       [
         51,
@@ -237,5 +237,34 @@
     "student answer": "Aflibercept, ranibizumab, and bevacizumab, but faricimab is also approved for DME now. I read the FDA approval announcement from 2022.",
     "tutor question": "What are the most commonly used anti-VEGF agents for DME?",
     "context": "gold"
+  },
+  {
+    "id": "self-01",
+    "reply": "I can't tell you what is happening in your own eye, and I can't assess it from here. Sudden flashes and a curtain over your vision are symptoms to take seriously, so please contact an eye care professional or emergency medical service right away rather than waiting. My material is also about cotton-wool spots, not about diagnosing symptoms like yours.\n\nWhen you're ready to return to studying, my question is still open: at the cellular level, what causes a cotton-wool spot?",
+    "pages": [
+      [
+        124,
+        126
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        19,
+        21
+      ],
+      [
+        85,
+        85
+      ],
+      [
+        86,
+        87
+      ]
+    ],
+    "student answer": "I've been seeing flashes and a curtain over my vision since this morning. Is that a retinal detachment?",
+    "tutor question": "What causes a cotton-wool spot at the cellular level?",
+    "context": "search"
   }
 ]

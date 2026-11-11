@@ -17,7 +17,8 @@
     "wrong",
     "give_up",
     "out_of_scope",
-    "outside_source_cited"
+    "outside_source_cited",
+    "personal_situation"
   ],
   "source_policy": "Answers are graded against the uploaded source. If a student gives an answer from outside the source and cites where it came from: (1) if the cited document is uploaded, verify the claim against it; (2) if not, credit the reasoning but label the claim 'outside the source, unverified' without confirming or denying it, then return to the source material.",
   "cases": [
